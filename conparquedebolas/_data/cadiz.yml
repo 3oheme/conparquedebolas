@@ -23,6 +23,56 @@
   precio: "€€€"
   horario: "Mar–Dom 13:30–16:00, 20:30–23:00"
 
+- nombre: "Bar Juanito"
+  slug: "bar-juanito"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Un clásico de Jerez con ambiente familiar de toda la vida. Las mesas son
+    grandes, hay tronas y los camareros están acostumbrados a familias con niños.
+  descripcion_general: "Tapas y raciones de cocina jerezana tradicional. Siempre lleno de locales."
+  direccion: "Calle Pescadería Vieja, 8, 11403 Jerez de la Frontera"
+  valoracion_kids: 3.8
+  imagen: "/assets/img/restaurantes/bar-juanito.jpg"
+  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
+  web_o_instagram: "https://instagram.com/barjuanitojerez"
+  ultima_verificacion: "2025-04-30"
+  tags:
+    tronas: true
+    carta_infantil: false
+    zona_juegos: false
+    cambiador: false
+    terraza: true
+    mascotas: false
+    accesible: false
+    opciones_saludables: false
+  precio: "€"
+  horario: "Lun–Sáb 13:00–16:30, 20:30–23:30"
+
+- nombre: "Restaurante Albores"
+  slug: "restaurante-albores"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Jardín interior con espacio para jugar mientras los padres comen tranquilos.
+    Tienen carta infantil, tronas y el cambiador es de los mejores de Jerez.
+  descripcion_general: "Cocina andaluza de autor en una casa señorial del centro histórico."
+  direccion: "Calle Consistorio, 12, 11403 Jerez de la Frontera"
+  valoracion_kids: 4.3
+  imagen: "/assets/img/restaurantes/restaurante-albores.jpg"
+  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
+  web_o_instagram: "https://www.restaurantealbores.com"
+  ultima_verificacion: "2025-04-30"
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
+    terraza: true
+    mascotas: false
+    accesible: true
+    opciones_saludables: true
+  precio: "€€"
+  horario: "Mar–Dom 13:30–16:30, 21:00–23:30"
+
 - nombre: "El Faro de Cádiz"
   slug: "el-faro-de-cadiz"
   ciudad: "Cádiz"
