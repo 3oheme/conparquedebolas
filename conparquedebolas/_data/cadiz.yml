@@ -1,0 +1,74 @@
+- ciudad: Jerez de la Frontera
+  restaurantes:
+    - nombre: "La Carboná"
+      por_que_kids_friendly: >
+        Local amplio con mesas bien separadas, el personal no pone problemas
+        con carritos y los niños son bienvenidos en cualquier franja horaria.
+      descripcion_general: "Cocina jerezana de mercado en un antiguo lagar. Precio medio-alto."
+      direccion: "Calle San Francisco de Paula, 2, 11401 Jerez de la Frontera"
+      valoracion_kids: 3.5
+      imagen: "/assets/img/restaurantes/la-carbona.jpg"
+      mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
+      web_o_instagram: "https://www.lacarbona.com"
+      ultima_verificacion: "2025-04-30"
+      tags:
+        tronas: true
+        carta_infantil: false
+        zona_juegos: false
+        cambiador: true
+        terraza: false
+        mascotas: false
+        accesible: true
+        opciones_saludables: false
+      precio: "€€€"
+      horario: "Mar–Dom 13:30–16:00, 20:30–23:00"
+
+- ciudad: Cádiz
+  restaurantes:
+    - nombre: "El Faro de Cádiz"
+      por_que_kids_friendly: >
+        Tienen tronas y carta infantil. El personal es muy atento con las
+        familias y la zona de terraza tiene espacio para moverse con carrito.
+      descripcion_general: "Referente de la cocina gaditana con pescados y mariscos frescos."
+      direccion: "Calle San Félix, 15, 11002 Cádiz"
+      valoracion_kids: 4.0
+      imagen: "/assets/img/restaurantes/el-faro-cadiz.jpg"
+      mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
+      web_o_instagram: "https://www.elfarodecadiz.com"
+      ultima_verificacion: "2025-04-30"
+      tags:
+        tronas: true
+        carta_infantil: true
+        zona_juegos: false
+        cambiador: true
+        terraza: true
+        mascotas: false
+        accesible: true
+        opciones_saludables: true
+      precio: "€€€"
+      horario: "Lun–Dom 13:00–16:30, 20:00–23:30"
+
+- ciudad: El Puerto de Santa María
+  restaurantes:
+    - nombre: "El Resbaladero"
+      por_que_kids_friendly: >
+        Zona de juegos exterior, carta infantil y tronas disponibles. Ideal
+        para comer en familia sin prisas, con mucho espacio en terraza.
+      descripcion_general: "Mariscos y fritos gaditanos junto al río Guadalete."
+      direccion: "Calle Micaela Aramburu de Mora, 4, 11500 El Puerto de Santa María"
+      valoracion_kids: 4.5
+      imagen: "/assets/img/restaurantes/el-resbaladero.jpg"
+      mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
+      web_o_instagram: "https://instagram.com/elresbaladero"
+      ultima_verificacion: "2025-04-30"
+      tags:
+        tronas: true
+        carta_infantil: true
+        zona_juegos: true
+        cambiador: true
+        terraza: true
+        mascotas: true
+        accesible: true
+        opciones_saludables: true
+      precio: "€€"
+      horario: "Jue–Mar 12:30–17:00, 20:00–23:30"
