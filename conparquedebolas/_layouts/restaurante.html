@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="detalle">
+  <div class="detalle__imagen">
+    <div class="detalle__imagen-placeholder">🍽️</div>
+  </div>
+
+  <div class="detalle__contenido">
+    <header class="detalle__header">
+      <div class="detalle__meta">
+        <span class="detalle__ciudad">{{ page.ciudad }}</span>
+        <span class="card__rating">★ {{ page.valoracion_kids }}</span>
+        {% if page.precio %}<span class="card__precio">{{ page.precio }}</span>{% endif %}
+      </div>
+      <h1 class="detalle__nombre">{{ page.nombre }}</h1>
+    </header>
+
+    <div class="detalle__kids-friendly">
+      <p>{{ page.por_que_kids_friendly }}</p>
+    </div>
+
+    {% if page.descripcion_general %}
+    <p class="detalle__descripcion">{{ page.descripcion_general }}</p>
+    {% endif %}
+
+    <div class="detalle__tags">
+      {% if page.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
+      {% if page.tags.carta_infantil %}<span class="tag">🧒 Carta infantil</span>{% endif %}
+      {% if page.tags.zona_juegos %}<span class="tag">🎮 Zona de juegos</span>{% endif %}
+      {% if page.tags.cambiador %}<span class="tag">🚻 Cambiador</span>{% endif %}
+      {% if page.tags.terraza %}<span class="tag">🌿 Terraza</span>{% endif %}
+      {% if page.tags.mascotas %}<span class="tag">🐶 Mascotas</span>{% endif %}
+      {% if page.tags.accesible %}<span class="tag">♿ Accesible</span>{% endif %}
+      {% if page.tags.opciones_saludables %}<span class="tag">🥗 Saludable</span>{% endif %}
+    </div>
+
+    <div class="detalle__info">
+      <p>📍 {{ page.direccion }}</p>
+      {% if page.horario %}<p>🕐 {{ page.horario }}</p>{% endif %}
+      {% if page.web_o_instagram %}
+      <p>🔗 <a href="{{ page.web_o_instagram }}" target="_blank" rel="noopener">Web / Instagram</a></p>
+      {% endif %}
+    </div>
+
+    {% if page.mapa_embed and page.mapa_embed != "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx" %}
+    <div class="detalle__mapa">
+      <iframe src="{{ page.mapa_embed }}" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    {% endif %}
+
+    <p class="detalle__verificacion">Última verificación: {{ page.ultima_verificacion }}</p>
+
+    <a href="/" class="detalle__volver">← Volver al listado</a>
+  </div>
+</article>

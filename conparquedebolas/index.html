@@ -9,21 +9,27 @@ title: Restaurantes kids-friendly en Cádiz
     <p class="listing-header__sub">Los mejores sitios para comer con niños en la provincia de Cádiz.</p>
   </header>
 
-  {% for grupo in site.data.cadiz %}
+  {% assign ciudades = site.data.cadiz | map: "ciudad" | uniq %}
+  {% for ciudad in ciudades %}
   <section class="ciudad">
-    <h2 class="ciudad__titulo">{{ grupo.ciudad }}</h2>
+    <h2 class="ciudad__titulo">{{ ciudad }}</h2>
     <div class="cards">
-      {% for r in grupo.restaurantes %}
+      {% assign restaurantes = site.data.cadiz | where: "ciudad", ciudad %}
+      {% for r in restaurantes %}
       <article class="card">
-        <div class="card__imagen">
-          <div class="card__imagen-placeholder">🍽️</div>
-        </div>
+        <a href="/restaurantes/{{ r.slug }}/" class="card__imagen-link">
+          <div class="card__imagen">
+            <div class="card__imagen-placeholder">🍽️</div>
+          </div>
+        </a>
         <div class="card__body">
           <div class="card__meta">
             <span class="card__rating">★ {{ r.valoracion_kids }}</span>
             {% if r.precio %}<span class="card__precio">{{ r.precio }}</span>{% endif %}
           </div>
-          <h3 class="card__nombre">{{ r.nombre }}</h3>
+          <h3 class="card__nombre">
+            <a href="/restaurantes/{{ r.slug }}/">{{ r.nombre }}</a>
+          </h3>
           <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
           <div class="card__tags">
             {% if r.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
