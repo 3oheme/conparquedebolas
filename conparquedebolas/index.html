@@ -12,7 +12,7 @@ title: Restaurantes kids-friendly en Cádiz
   {% assign ciudades = site.data.cadiz | map: "ciudad" | uniq %}
   {% for ciudad in ciudades %}
   <section class="ciudad">
-    <h2 class="ciudad__titulo">{{ ciudad }}</h2>
+    <h2 class="ciudad__titulo"><a href="/ciudades/{{ ciudad | slugify }}/">{{ ciudad }}</a></h2>
     <div class="cards">
       {% assign restaurantes = site.data.cadiz | where: "ciudad", ciudad %}
       {% for r in restaurantes %}

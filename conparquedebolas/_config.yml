@@ -26,6 +26,7 @@ description: >-
 baseurl: ""
 url: "https://conparquedebolas.netlify.app"
 github_username: palomoduarte
+header_pages: []
 
 # Build settings
 theme: minima

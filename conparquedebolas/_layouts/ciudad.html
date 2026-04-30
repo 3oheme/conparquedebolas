@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="listing">
+  <header class="listing-header">
+    <p class="listing-header__breadcrumb"><a href="/">← Todas las ciudades</a></p>
+    <h1>Restaurantes en {{ page.ciudad }}</h1>
+    <p class="listing-header__sub">{{ page.restaurantes | size }} restaurantes kids-friendly</p>
+  </header>
+
+  <div class="cards">
+    {% for r in page.restaurantes %}
+    <article class="card">
+      <a href="/restaurantes/{{ r.slug }}/" class="card__imagen-link">
+        <div class="card__imagen">
+          <div class="card__imagen-placeholder">🍽️</div>
+        </div>
+      </a>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__rating">★ {{ r.valoracion_kids }}</span>
+          {% if r.precio %}<span class="card__precio">{{ r.precio }}</span>{% endif %}
+        </div>
+        <h3 class="card__nombre">
+          <a href="/restaurantes/{{ r.slug }}/">{{ r.nombre }}</a>
+        </h3>
+        <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
+        <div class="card__tags">
+          {% if r.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
+          {% if r.tags.carta_infantil %}<span class="tag">🧒 Carta infantil</span>{% endif %}
+          {% if r.tags.zona_juegos %}<span class="tag">🎮 Zona de juegos</span>{% endif %}
+          {% if r.tags.cambiador %}<span class="tag">🚻 Cambiador</span>{% endif %}
+          {% if r.tags.terraza %}<span class="tag">🌿 Terraza</span>{% endif %}
+          {% if r.tags.mascotas %}<span class="tag">🐶 Mascotas</span>{% endif %}
+          {% if r.tags.accesible %}<span class="tag">♿ Accesible</span>{% endif %}
+          {% if r.tags.opciones_saludables %}<span class="tag">🥗 Saludable</span>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
