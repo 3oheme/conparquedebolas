@@ -23,8 +23,8 @@ email: bohemegm@gmail.com
 description: >-
   Restaurantes kids-friendly en la provincia de Cádiz y toda España.
   Encuentra los mejores sitios para comer con niños.
-baseurl: "/conparquedebolas"
-url: "https://palomoduarte.github.io"
+baseurl: ""
+url: "https://conparquedebolas.netlify.app"
 github_username: palomoduarte
 
 # Build settings
