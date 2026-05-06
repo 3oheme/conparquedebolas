@@ -8,7 +8,6 @@
   direccion: "Calle San Francisco de Paula, 2, 11401 Jerez de la Frontera"
   valoracion_kids: 3.5
   imagen: "/assets/img/restaurantes/la-carbona.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   web: "https://www.lacarbona.com"
   ultima_verificacion: "2025-04-30"
   lat: 36.6824
@@ -35,7 +34,6 @@
   direccion: "Calle Pescadería Vieja, 8, 11403 Jerez de la Frontera"
   valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/bar-juanito.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "barjuanitojerez"
   ultima_verificacion: "2025-04-30"
   lat: 36.6861
@@ -62,7 +60,6 @@
   direccion: "Calle Consistorio, 12, 11403 Jerez de la Frontera"
   valoracion_kids: 4.3
   imagen: "/assets/img/restaurantes/restaurante-albores.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   web: "https://www.restaurantealbores.com"
   ultima_verificacion: "2025-04-30"
   lat: 36.6860
@@ -89,7 +86,6 @@
   direccion: "Calle San Félix, 15, 11002 Cádiz"
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/el-faro-cadiz.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   web: "https://www.elfarodecadiz.com"
   ultima_verificacion: "2025-04-30"
   lat: 36.5268
@@ -116,7 +112,6 @@
   direccion: "Calle Micaela Aramburu de Mora, 4, 11500 El Puerto de Santa María"
   valoracion_kids: 4.5
   imagen: "/assets/img/restaurantes/el-resbaladero.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "elresbaladero"
   ultima_verificacion: "2025-04-30"
   lat: 36.5972
@@ -143,7 +138,6 @@
   direccion: "Calle Baños, 3, 11540 Sanlúcar de Barrameda"
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/la-mesa-del-duque.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "lamesadelduque"
   ultima_verificacion: "2025-04-30"
   lat: 36.7785
@@ -170,7 +164,6 @@
   direccion: "Paseo Marítimo, s/n, 11130 Chiclana de la Frontera"
   valoracion_kids: 4.8
   imagen: "/assets/img/restaurantes/chiringuito-barrosa.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "chiringuito_barrosa"
   ultima_verificacion: "2025-04-30"
   lat: 36.3505
@@ -197,7 +190,6 @@
   direccion: "Avenida de la Marina, 12, 11520 Rota"
   valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/el-ancla.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   ultima_verificacion: "2025-04-30"
   lat: 36.6236
   lng: -6.3628
@@ -223,7 +215,6 @@
   direccion: "Carretera A-396, km 4, 11150 Vejer de la Frontera"
   valoracion_kids: 4.2
   imagen: "/assets/img/restaurantes/venta-el-toro.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "ventaeltoro"
   ultima_verificacion: "2025-04-30"
   lat: 36.2555
@@ -250,7 +241,6 @@
   direccion: "Calle Extramuros, 7, 11140 Conil de la Frontera"
   valoracion_kids: 4.5
   imagen: "/assets/img/restaurantes/la-taberna-del-pescador.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
   instagram: "taberna_pescador_conil"
   ultima_verificacion: "2025-04-30"
   lat: 36.2774

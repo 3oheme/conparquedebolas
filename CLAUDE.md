@@ -50,7 +50,7 @@ conparquedebolas/          ← raíz del repo git
   descripcion_general: "Cocina tipo. Precio medio."   # opcional
   direccion: "Calle Ejemplo, 1, 11401 Ciudad"
   valoracion_kids: 4.5                 # 1–5, un decimal
-  imagen: "/assets/img/restaurantes/slug.jpg"
+  imagen: "/assets/img/restaurantes/slug.jpg"          # opcional
   web: "https://www.ejemplo.com"                      # opcional
   instagram: "handle_sin_arroba"                      # opcional, solo el handle
   lat: 36.5268                                        # necesario para mostrar el mapa en la ficha
