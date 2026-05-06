@@ -39,7 +39,7 @@ module Jekyll
       end
 
       site.data["cadiz"].group_by { |r| r["ciudad"] }.each do |ciudad, restaurantes|
-        slug = Jekyll::Utils.slugify(ciudad)
+        slug = Jekyll::Utils.slugify(ciudad, mode: "latin")
         site.pages << CiudadPage.new(site, site.source, slug, ciudad, restaurantes)
       end
     end
