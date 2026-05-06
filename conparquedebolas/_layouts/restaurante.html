@@ -2,6 +2,39 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "{{ page.nombre | escape }}",
+  "description": "{{ page.por_que_kids_friendly | strip_newlines | escape }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ page.direccion | escape }}",
+    "addressLocality": "{{ page.ciudad | escape }}",
+    "addressCountry": "ES"
+  }{% if page.lat and page.lng %},
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ page.lat }},
+    "longitude": {{ page.lng }}
+  }{% endif %}{% if page.imagen %},
+  "image": "{{ site.url }}{{ page.imagen }}"{% endif %}{% if page.precio %},
+  "priceRange": "{{ page.precio }}"{% endif %}{% if page.web %},
+  "url": "{{ page.web }}"{% endif %},
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Tronas", "value": {{ page.tags.tronas | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Carta infantil", "value": {{ page.tags.carta_infantil | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Zona de juegos", "value": {{ page.tags.zona_juegos | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Cambiador", "value": {{ page.tags.cambiador | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Terraza", "value": {{ page.tags.terraza | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Mascotas", "value": {{ page.tags.mascotas | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Accesible", "value": {{ page.tags.accesible | default: false }}},
+    {"@type": "LocationFeatureSpecification", "name": "Opciones saludables", "value": {{ page.tags.opciones_saludables | default: false }}}
+  ]
+}
+</script>
+
 <article class="detalle">
   <div class="detalle__imagen">
     <div class="detalle__imagen-placeholder">🍽️</div>
