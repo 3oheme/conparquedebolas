@@ -5,7 +5,7 @@
 Web estática que lista restaurantes kids-friendly en la provincia de Cádiz (con arquitectura preparada para escalar a otras provincias).
 
 **Repo:** `github.com/3oheme/conparquedebolas`  
-**Producción:** `https://conparquedebolas.netlify.app`  
+**Producción:** `https://conparquedebolas.com` (DNS en Cloudflare → Netlify, SSL via Let's Encrypt)  
 **Stack:** Jekyll 4.3 + Ruby 3.3 + YAML + JS vanilla
 
 ### Estructura del proyecto
@@ -51,11 +51,10 @@ conparquedebolas/          ← raíz del repo git
   direccion: "Calle Ejemplo, 1, 11401 Ciudad"
   valoracion_kids: 4.5                 # 1–5, un decimal
   imagen: "/assets/img/restaurantes/slug.jpg"
-  mapa_embed: "https://www.google.com/maps/embed?..."
   web: "https://www.ejemplo.com"                      # opcional
   instagram: "handle_sin_arroba"                      # opcional, solo el handle
-  lat: 36.5268                                        # coordenadas para mapas
-  lng: -6.2989
+  lat: 36.5268                                        # necesario para mostrar el mapa en la ficha
+  lng: -6.2989                                        # necesario para mostrar el mapa en la ficha
   ultima_verificacion: "2025-04-30"
   tags:
     tronas: true
@@ -112,7 +111,9 @@ El site queda disponible en `http://localhost:4000/`.
 2. Añadir una entrada siguiendo la estructura YAML de arriba
 3. El `slug` debe ser único y en minúsculas sin tildes (ej. `el-faro-de-cadiz`)
 4. Si la ciudad es nueva, escribirla exactamente igual que aparecerá en los títulos
-5. El servidor regenera las páginas automáticamente al guardar
+5. Obtener `lat` y `lng` desde Google Maps (click derecho sobre el punto → copiar coordenadas) — sin ellos el mapa no se muestra en la ficha
+6. `web` e `instagram` son opcionales e independientes; un restaurante puede tener ambos, uno o ninguno. En `instagram` se escribe solo el handle, sin `https://instagram.com/`
+7. El servidor regenera las páginas automáticamente al guardar
 
 ### Añadir una nueva provincia
 
