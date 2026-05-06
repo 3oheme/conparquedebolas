@@ -9,8 +9,10 @@
   valoracion_kids: 3.5
   imagen: "/assets/img/restaurantes/la-carbona.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://www.lacarbona.com"
+  web: "https://www.lacarbona.com"
   ultima_verificacion: "2025-04-30"
+  lat: 36.6824
+  lng: -6.1323
   tags:
     tronas: true
     carta_infantil: false
@@ -34,8 +36,10 @@
   valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/bar-juanito.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/barjuanitojerez"
+  instagram: "barjuanitojerez"
   ultima_verificacion: "2025-04-30"
+  lat: 36.6861
+  lng: -6.1372
   tags:
     tronas: true
     carta_infantil: false
@@ -59,8 +63,10 @@
   valoracion_kids: 4.3
   imagen: "/assets/img/restaurantes/restaurante-albores.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://www.restaurantealbores.com"
+  web: "https://www.restaurantealbores.com"
   ultima_verificacion: "2025-04-30"
+  lat: 36.6860
+  lng: -6.1378
   tags:
     tronas: true
     carta_infantil: true
@@ -84,8 +90,10 @@
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/el-faro-cadiz.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://www.elfarodecadiz.com"
+  web: "https://www.elfarodecadiz.com"
   ultima_verificacion: "2025-04-30"
+  lat: 36.5268
+  lng: -6.2989
   tags:
     tronas: true
     carta_infantil: true
@@ -109,8 +117,10 @@
   valoracion_kids: 4.5
   imagen: "/assets/img/restaurantes/el-resbaladero.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/elresbaladero"
+  instagram: "elresbaladero"
   ultima_verificacion: "2025-04-30"
+  lat: 36.5972
+  lng: -6.2315
   tags:
     tronas: true
     carta_infantil: true
@@ -134,8 +144,10 @@
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/la-mesa-del-duque.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/lamesadelduque"
+  instagram: "lamesadelduque"
   ultima_verificacion: "2025-04-30"
+  lat: 36.7785
+  lng: -6.3571
   tags:
     tronas: true
     carta_infantil: false
@@ -159,8 +171,10 @@
   valoracion_kids: 4.8
   imagen: "/assets/img/restaurantes/chiringuito-barrosa.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/chiringuito_barrosa"
+  instagram: "chiringuito_barrosa"
   ultima_verificacion: "2025-04-30"
+  lat: 36.3505
+  lng: -6.1578
   tags:
     tronas: true
     carta_infantil: true
@@ -184,8 +198,9 @@
   valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/el-ancla.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: ""
   ultima_verificacion: "2025-04-30"
+  lat: 36.6236
+  lng: -6.3628
   tags:
     tronas: true
     carta_infantil: true
@@ -209,8 +224,10 @@
   valoracion_kids: 4.2
   imagen: "/assets/img/restaurantes/venta-el-toro.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/ventaeltoro"
+  instagram: "ventaeltoro"
   ultima_verificacion: "2025-04-30"
+  lat: 36.2555
+  lng: -5.9822
   tags:
     tronas: true
     carta_infantil: true
@@ -234,8 +251,10 @@
   valoracion_kids: 4.5
   imagen: "/assets/img/restaurantes/la-taberna-del-pescador.jpg"
   mapa_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3xxxxxxxxx"
-  web_o_instagram: "https://instagram.com/taberna_pescador_conil"
+  instagram: "taberna_pescador_conil"
   ultima_verificacion: "2025-04-30"
+  lat: 36.2774
+  lng: -6.0854
   tags:
     tronas: true
     carta_infantil: true

@@ -52,7 +52,10 @@ conparquedebolas/          ← raíz del repo git
   valoracion_kids: 4.5                 # 1–5, un decimal
   imagen: "/assets/img/restaurantes/slug.jpg"
   mapa_embed: "https://www.google.com/maps/embed?..."
-  web_o_instagram: "https://instagram.com/..."       # opcional
+  web: "https://www.ejemplo.com"                      # opcional
+  instagram: "handle_sin_arroba"                      # opcional, solo el handle
+  lat: 36.5268                                        # coordenadas para mapas
+  lng: -6.2989
   ultima_verificacion: "2025-04-30"
   tags:
     tronas: true
