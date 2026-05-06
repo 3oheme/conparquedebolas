@@ -24,7 +24,8 @@ description: >-
   Restaurantes kids-friendly en la provincia de Cádiz y toda España.
   Encuentra los mejores sitios para comer con niños.
 baseurl: ""
-url: "https://conparquedebolas.netlify.app"
+url: "https://conparquedebolas.com"
+lang: es
 github_username: palomoduarte
 header_pages: []
 
@@ -32,6 +33,7 @@ header_pages: []
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

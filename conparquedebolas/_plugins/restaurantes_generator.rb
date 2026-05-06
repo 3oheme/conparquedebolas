@@ -9,7 +9,8 @@ module Jekyll
       process(@name)
       read_yaml(File.join(base, "_layouts"), "restaurante.html")
       self.data.merge!(data)
-      self.data["title"] = data["nombre"]
+      self.data["title"]       = data["nombre"]
+      self.data["description"] = data["por_que_kids_friendly"]
     end
   end
 
@@ -23,6 +24,7 @@ module Jekyll
       process(@name)
       read_yaml(File.join(base, "_layouts"), "ciudad.html")
       self.data["title"]        = "Restaurantes en #{ciudad}"
+      self.data["description"]  = "Los mejores restaurantes kids-friendly en #{ciudad}. Sitios para comer con niños con tronas, carta infantil y zonas de juego."
       self.data["ciudad"]       = ciudad
       self.data["restaurantes"] = restaurantes
     end
