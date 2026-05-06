@@ -1,69 +1,77 @@
-- nombre: "La Carboná"
-  slug: "la-carbona"
+# Restaurantes con parque de bolas en la provincia de Cádiz
+# Datos verificados a partir de fuentes públicas y experiencia directa.
+# La valoración kids es editorial: revísala antes de publicar.
+
+# ─────────────────────────────────────────────────────────────
+# JEREZ DE LA FRONTERA
+# ─────────────────────────────────────────────────────────────
+
+- nombre: "Piamonte"
+  slug: "piamonte-jerez"
   ciudad: "Jerez de la Frontera"
   por_que_kids_friendly: >
-    Local amplio con mesas bien separadas, el personal no pone problemas
-    con carritos y los niños son bienvenidos en cualquier franja horaria.
-  descripcion_general: "Cocina jerezana de mercado en un antiguo lagar. Precio medio-alto."
-  direccion: "Calle San Francisco de Paula, 2, 11401 Jerez de la Frontera"
-  valoracion_kids: 3.5
-  imagen: "/assets/img/restaurantes/la-carbona.jpg"
-  web: "https://www.lacarbona.com"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.6824
-  lng: -6.1323
+    Pionero en Jerez en tener parque de bolas dentro del restaurante,
+    con monitores que vigilan a los niños mientras los padres comen.
+    Casi 20 años recibiendo familias.
+  descripcion_general: "Pizzería italiana con 27 tipos de pizzas, además de pastas, carnes y pescados a la parrilla. Buena relación calidad-precio."
+  direccion: "Av. del Mediterráneo, 2E, 11406 Jerez de la Frontera"
+  valoracion_kids: 4.5
+  imagen: "/assets/img/restaurantes/piamonte-jerez.jpg"
+  web: "https://piamontejerez.com"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6960
+  lng: -6.1180
   tags:
     tronas: true
-    carta_infantil: false
-    zona_juegos: false
+    carta_infantil: true
+    zona_juegos: true
     cambiador: true
     terraza: false
     mascotas: false
     accesible: true
     opciones_saludables: false
-  precio: "€€€"
-  horario: "Mar–Dom 13:30–16:00, 20:30–23:00"
+  precio: "€€"
+  horario: "Mar–Dom 13:00–16:30, 20:00–23:30"
 
-- nombre: "Bar Juanito"
-  slug: "bar-juanito"
+- nombre: "Mesón Los Nuevos Olivares"
+  slug: "meson-los-nuevos-olivares"
   ciudad: "Jerez de la Frontera"
   por_que_kids_friendly: >
-    Un clásico de Jerez con ambiente familiar de toda la vida. Las mesas son
-    grandes, hay tronas y los camareros están acostumbrados a familias con niños.
-  descripcion_general: "Tapas y raciones de cocina jerezana tradicional. Siempre lleno de locales."
-  direccion: "Calle Pescadería Vieja, 8, 11403 Jerez de la Frontera"
-  valoracion_kids: 3.8
-  imagen: "/assets/img/restaurantes/bar-juanito.jpg"
-  instagram: "barjuanitojerez"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.6861
-  lng: -6.1372
+    Mesón con amplia zona exterior y parque infantil. Espacio de sobra
+    para que los niños se muevan mientras la familia come tranquila.
+  descripcion_general: "Cocina tradicional jerezana en un mesón con tablas, guisos y carnes a la brasa."
+  direccion: "Av. Olivar de Rivero, 75, 11406 Jerez de la Frontera"
+  valoracion_kids: 4.0
+  imagen: "/assets/img/restaurantes/meson-los-nuevos-olivares.jpg"
+  web: "https://mesonlosnuevosolivares.es"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6855
+  lng: -6.1545
   tags:
     tronas: true
     carta_infantil: false
-    zona_juegos: false
+    zona_juegos: true
     cambiador: false
     terraza: true
-    mascotas: false
-    accesible: false
+    mascotas: true
+    accesible: true
     opciones_saludables: false
-  precio: "€"
-  horario: "Lun–Sáb 13:00–16:30, 20:30–23:30"
+  precio: "€€"
+  horario: "Mar–Dom 13:00–16:30, 20:30–23:30"
 
-- nombre: "Restaurante Albores"
-  slug: "restaurante-albores"
+- nombre: "Cervecería Retiro"
+  slug: "cerveceria-retiro"
   ciudad: "Jerez de la Frontera"
   por_que_kids_friendly: >
-    Jardín interior con espacio para jugar mientras los padres comen tranquilos.
-    Tienen carta infantil, tronas y el cambiador es de los mejores de Jerez.
-  descripcion_general: "Cocina andaluza de autor en una casa señorial del centro histórico."
-  direccion: "Calle Consistorio, 12, 11403 Jerez de la Frontera"
+    Parque de bolas con monitores por 1 € (gratis si pides el menú infantil
+    de 6 €). Muy popular para cumpleaños y celebraciones familiares.
+  descripcion_general: "Cervecería de tapas y raciones con menú variado y precio asequible."
+  direccion: "Av. de Europa, 30, 11405 Jerez de la Frontera"
   valoracion_kids: 4.3
-  imagen: "/assets/img/restaurantes/restaurante-albores.jpg"
-  web: "https://www.restaurantealbores.com"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.6860
-  lng: -6.1378
+  imagen: "/assets/img/restaurantes/cerveceria-retiro.jpg"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.7035
+  lng: -6.1170
   tags:
     tronas: true
     carta_infantil: true
@@ -72,102 +80,194 @@
     terraza: true
     mascotas: false
     accesible: true
-    opciones_saludables: true
-  precio: "€€"
-  horario: "Mar–Dom 13:30–16:30, 21:00–23:30"
+    opciones_saludables: false
+  precio: "€"
+  horario: "Lun–Dom 08:00–24:00"
 
-- nombre: "El Faro de Cádiz"
-  slug: "el-faro-de-cadiz"
-  ciudad: "Cádiz"
+- nombre: "Badybu"
+  slug: "badybu"
+  ciudad: "Jerez de la Frontera"
   por_que_kids_friendly: >
-    Tienen tronas y carta infantil. El personal es muy atento con las
-    familias y la zona de terraza tiene espacio para moverse con carrito.
-  descripcion_general: "Referente de la cocina gaditana con pescados y mariscos frescos."
-  direccion: "Calle San Félix, 15, 11002 Cádiz"
-  valoracion_kids: 4.0
-  imagen: "/assets/img/restaurantes/el-faro-cadiz.jpg"
-  web: "https://www.elfarodecadiz.com"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.5268
-  lng: -6.2989
+    Ludoteca con cafetería: parque de bolas de 5 metros con tobogán y
+    trampolín. Pensado de raíz para niños, con monitores y zona de
+    celebraciones para cumpleaños.
+  descripcion_general: "Centro de ocio infantil con cafetería y sala de eventos. Ideal para meriendas y celebraciones."
+  direccion: "C. San Juan Bautista de la Salle, 11407 Jerez de la Frontera"
+  valoracion_kids: 4.6
+  imagen: "/assets/img/restaurantes/badybu.jpg"
+  web: "https://www.badybu.com"
+  instagram: "badybu_eventos"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6885
+  lng: -6.1285
   tags:
     tronas: true
     carta_infantil: true
-    zona_juegos: false
+    zona_juegos: true
     cambiador: true
+    terraza: false
+    mascotas: false
+    accesible: true
+    opciones_saludables: false
+  precio: "€"
+  horario: "Mar–Dom 17:00–21:30 (consultar para celebraciones)"
+
+- nombre: "Altos Ibéricos"
+  slug: "altos-ibericos"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Tabanco amplio en zona de Hipercor con espacio para niños y terraza
+    cubierta. Cuentan con zona de juegos para que los más pequeños no
+    se aburran durante el aperitivo.
+  descripcion_general: "Tabanco-mesón especializado en ibéricos, montaditos, tostas y guisos tradicionales jerezanos."
+  direccion: "Av. Voltaire, Edif. Albatros, 6, 11405 Jerez de la Frontera"
+  valoracion_kids: 4.0
+  imagen: "/assets/img/restaurantes/altos-ibericos.jpg"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.7015
+  lng: -6.1145
+  tags:
+    tronas: true
+    carta_infantil: false
+    zona_juegos: true
+    cambiador: false
     terraza: true
     mascotas: false
     accesible: true
-    opciones_saludables: true
-  precio: "€€€"
-  horario: "Lun–Dom 13:00–16:30, 20:00–23:30"
+    opciones_saludables: false
+  precio: "€€"
+  horario: "Lun–Dom 08:00–24:00"
 
-- nombre: "El Resbaladero"
-  slug: "el-resbaladero"
+- nombre: "Muerde la Pasta - Luz Shopping"
+  slug: "muerde-la-pasta-luz-shopping"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Buffet libre italiano con "Pasta Park", una zona infantil dentro del
+    propio local. Concepto pensado para familias: comes lo que quieras,
+    los niños comen lo que quieran y juegan al lado.
+  descripcion_general: "Buffet italiano de pastas, pizzas, ensaladas y postres con más de 150 recetas en rotación."
+  direccion: "Ronda Aurora Boreal, s/n, CC Luz Shopping, 11408 Jerez de la Frontera"
+  valoracion_kids: 4.4
+  imagen: "/assets/img/restaurantes/muerde-la-pasta-luz-shopping.jpg"
+  web: "https://muerdelapasta.com/restaurantes-italianos-cerca/centro-comercial-luz-shopping/"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.7110
+  lng: -6.1075
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
+    terraza: false
+    mascotas: false
+    accesible: true
+    opciones_saludables: true
+  precio: "€€"
+  horario: "Lun–Dom 13:00–16:30, 20:00–24:00"
+
+- nombre: "Hikari Sushi"
+  slug: "hikari-sushi-jerez"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Buffet asiático enorme (1.600 m², 370 plazas) con ambientación temática
+    estilo anime/Akihabara y zona infantil. Niños menores de 100 cm comen
+    gratis; entre 100 y 130 cm pagan menú infantil.
+  descripcion_general: "El mayor buffet japonés/asiático a la carta de Jerez. Más de 200 platos: sushi, plancha, wok, mariscos y postres."
+  direccion: "Av. de Europa, 13B, 11405 Jerez de la Frontera"
+  valoracion_kids: 4.2
+  imagen: "/assets/img/restaurantes/hikari-sushi-jerez.jpg"
+  web: "https://www.restaurantehikari.com"
+  instagram: "hikari.sushi.jerez"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.7035
+  lng: -6.1180
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
+    terraza: false
+    mascotas: false
+    accesible: true
+    opciones_saludables: true
+  precio: "€€"
+  horario: "Lun–Dom 13:00–16:30, 20:00–24:00"
+
+# ─────────────────────────────────────────────────────────────
+# EL PUERTO DE SANTA MARÍA
+# ─────────────────────────────────────────────────────────────
+
+- nombre: "Foster's Hollywood Vistahermosa"
+  slug: "fosters-hollywood-vistahermosa"
   ciudad: "El Puerto de Santa María"
   por_que_kids_friendly: >
-    Zona de juegos exterior, carta infantil y tronas disponibles. Ideal
-    para comer en familia sin prisas, con mucho espacio en terraza.
-  descripcion_general: "Mariscos y fritos gaditanos junto al río Guadalete."
-  direccion: "Calle Micaela Aramburu de Mora, 4, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.5
-  imagen: "/assets/img/restaurantes/el-resbaladero.jpg"
-  instagram: "elresbaladero"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.5972
-  lng: -6.2315
-  tags:
-    tronas: true
-    carta_infantil: true
-    zona_juegos: true
-    cambiador: true
-    terraza: true
-    mascotas: true
-    accesible: true
-    opciones_saludables: true
-  precio: "€€"
-  horario: "Jue–Mar 12:30–17:00, 20:00–23:30"
-
-- nombre: "La Mesa del Duque"
-  slug: "la-mesa-del-duque"
-  ciudad: "Sanlúcar de Barrameda"
-  por_que_kids_friendly: >
-    Terraza amplia frente al Guadalquivir con mucho espacio para corretear.
-    Tronas disponibles y el personal encantado con los más pequeños.
-  descripcion_general: "Cocina sanluqueña con langostinos y manzanilla. Ambiente familiar."
-  direccion: "Calle Baños, 3, 11540 Sanlúcar de Barrameda"
+    Cadena pensada de origen para familias: tronas, carta infantil con
+    menús completos, zona de juegos y cambiador. Apuesta segura cuando
+    los niños están especialmente exigentes.
+  descripcion_general: "Cocina americana clásica: hamburguesas, costillas, fajitas, ensaladas y postres."
+  direccion: "C/ del Vivero, 2, CC Vistahermosa, 11500 El Puerto de Santa María"
   valoracion_kids: 4.0
-  imagen: "/assets/img/restaurantes/la-mesa-del-duque.jpg"
-  instagram: "lamesadelduque"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.7785
-  lng: -6.3571
+  imagen: "/assets/img/restaurantes/fosters-hollywood-vistahermosa.jpg"
+  web: "https://fostershollywood.es/restaurantes/cadiz/el-puerto-de-santa-maria/fh-vistahermosa"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6010
+  lng: -6.2780
   tags:
     tronas: true
-    carta_infantil: false
-    zona_juegos: false
-    cambiador: false
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
     terraza: true
-    mascotas: true
+    mascotas: false
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Lun–Dom 12:00–17:00, 20:00–23:00"
+  horario: "Lun–Dom 13:00–24:00"
 
-- nombre: "Chiringuito Playa de la Barrosa"
-  slug: "chiringuito-playa-barrosa"
-  ciudad: "Chiclana de la Frontera"
+- nombre: "Pizzería Blanca Paloma"
+  slug: "pizzeria-blanca-paloma"
+  ciudad: "El Puerto de Santa María"
   por_que_kids_friendly: >
-    Está en primera línea de playa con zona de juegos de arena justo al lado.
-    Sirven menú infantil y tienen cambiador en los baños.
-  descripcion_general: "Pescado fresco y arroces con vistas al Atlántico. Ideal en verano."
-  direccion: "Paseo Marítimo, s/n, 11130 Chiclana de la Frontera"
-  valoracion_kids: 4.8
-  imagen: "/assets/img/restaurantes/chiringuito-barrosa.jpg"
-  instagram: "chiringuito_barrosa"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.3505
-  lng: -6.1578
+    Pizzería italiana clásica del Puerto al lado del recinto ferial. Local
+    amplio con zona infantil donde los niños pueden jugar mientras comes
+    una pizza fina al horno de leña.
+  descripcion_general: "Pizzería italiana abierta en 1993, especializada en pizza fina al horno y tiramisú casero."
+  direccion: "C. Paloma Zurita, 1, 11500 El Puerto de Santa María"
+  valoracion_kids: 4.1
+  imagen: "/assets/img/restaurantes/pizzeria-blanca-paloma.jpg"
+  web: "https://pizzeriablancapaloma.com"
+  instagram: "pizzeriablancapaloma"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6017
+  lng: -6.2440
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: false
+    terraza: true
+    mascotas: false
+    accesible: true
+    opciones_saludables: false
+  precio: "€€"
+  horario: "Mié–Lun 13:00–16:30, 20:00–24:00"
+
+- nombre: "Little Italy Trattoria & Pizzería"
+  slug: "little-italy-el-puerto"
+  ciudad: "El Puerto de Santa María"
+  por_que_kids_friendly: >
+    Zona infantil con monitor/animador contratado para vigilar a los niños
+    mientras los padres comen. Tienen incluso una sala de lactancia con
+    privacidad para madres con bebés. Una de las mejores opciones del Puerto.
+  descripcion_general: "Trattoria-pizzería italiana con carta amplia, ingredientes importados y menú infantil."
+  direccion: "Carretera de Sanlúcar, 4, 11500 El Puerto de Santa María"
+  valoracion_kids: 4.7
+  imagen: "/assets/img/restaurantes/little-italy-el-puerto.jpg"
+  web: "https://pizzerialittleitaly.es"
+  instagram: "little_italy_restaurante"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6210
+  lng: -6.2210
   tags:
     tronas: true
     carta_infantil: true
@@ -178,47 +278,49 @@
     accesible: true
     opciones_saludables: true
   precio: "€€"
-  horario: "Mar–Dom 12:00–18:00 (solo temporada)"
+  horario: "Lun–Jue 13:00–16:00, 20:00–24:00, Vie–Dom 13:00–18:00, 20:00–24:00"
 
-- nombre: "El Ancla"
-  slug: "el-ancla"
-  ciudad: "Rota"
+- nombre: "The Shamrock Bar & Eatery"
+  slug: "the-shamrock"
+  ciudad: "El Puerto de Santa María"
   por_que_kids_friendly: >
-    Local tranquilo cerca del puerto con carta infantil y tronas. Los niños
-    pueden ver los barcos mientras comen, lo que los mantiene entretenidos.
-  descripcion_general: "Mariscos y pescados de la bahía en un local de toda la vida."
-  direccion: "Avenida de la Marina, 12, 11520 Rota"
-  valoracion_kids: 3.8
-  imagen: "/assets/img/restaurantes/el-ancla.jpg"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.6236
-  lng: -6.3628
-  tags:
-    tronas: true
-    carta_infantil: true
-    zona_juegos: false
-    cambiador: true
-    terraza: true
-    mascotas: false
-    accesible: false
-    opciones_saludables: false
-  precio: "€€"
-  horario: "Mié–Lun 13:00–16:30, 20:30–23:00"
-
-- nombre: "Venta El Toro"
-  slug: "venta-el-toro"
-  ciudad: "Vejer de la Frontera"
-  por_que_kids_friendly: >
-    Venta rural con jardín y zona de juegos. Los niños tienen espacio de sobra
-    y el ambiente relajado hace que nadie se ponga nervioso con los pequeños.
-  descripcion_general: "Cocina de la sierra gaditana: retinto, caza y guisos caseros."
-  direccion: "Carretera A-396, km 4, 11150 Vejer de la Frontera"
+    Pub irlandés con terraza para más de 100 personas y zona de juegos
+    para niños. Parking propio amplio (cómodo si vas con carrito) y
+    actividades para peques los fines de semana.
+  descripcion_general: "Pub irlandés con cocina internacional: desayunos, brunch, hamburguesas, currys y carnes."
+  direccion: "Carretera CA-603 Puerto-Rota, km 5.5, 11500 El Puerto de Santa María"
   valoracion_kids: 4.2
-  imagen: "/assets/img/restaurantes/venta-el-toro.jpg"
-  instagram: "ventaeltoro"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.2555
-  lng: -5.9822
+  imagen: "/assets/img/restaurantes/the-shamrock.jpg"
+  web: "https://www.shamrockbarandeatery.com"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6175
+  lng: -6.3055
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
+    terraza: true
+    mascotas: true
+    accesible: true
+    opciones_saludables: false
+  precio: "€€"
+  horario: "Mié–Lun 12:00–24:00 (cerrado martes)"
+
+- nombre: "La Parrilla Bailey's"
+  slug: "la-parrilla-baileys"
+  ciudad: "El Puerto de Santa María"
+  por_que_kids_friendly: >
+    Brasería con zona de juegos para niños y terraza amplia. El olor a
+    parrilla y el ambiente relajado la convierten en plan de comida
+    familiar largo de fin de semana.
+  descripcion_general: "Brasería argentina-andaluza: carnes a la parrilla, entrantes para compartir y postres caseros."
+  direccion: "Av. Fuentebravia, km 4, 11500 El Puerto de Santa María"
+  valoracion_kids: 4.1
+  imagen: "/assets/img/restaurantes/la-parrilla-baileys.jpg"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6080
+  lng: -6.2810
   tags:
     tronas: true
     carta_infantil: true
@@ -228,31 +330,32 @@
     mascotas: true
     accesible: true
     opciones_saludables: false
-  precio: "€"
-  horario: "Sáb–Dom 13:00–17:00, Vie–Sáb 20:30–23:00"
+  precio: "€€"
+  horario: "Lun–Dom 13:00–24:00"
 
-- nombre: "La Taberna del Pescador"
-  slug: "la-taberna-del-pescador"
-  ciudad: "Conil de la Frontera"
+- nombre: "The Cabin Beer Garden"
+  slug: "the-cabin"
+  ciudad: "El Puerto de Santa María"
   por_que_kids_friendly: >
-    Tienen zona de juegos cubierta para días de viento, carta infantil y
-    cambiador. Uno de los pocos sitios en Conil con todas las comodidades.
-  descripcion_general: "Atún de almadraba y fritos de la costa en pleno centro de Conil."
-  direccion: "Calle Extramuros, 7, 11140 Conil de la Frontera"
-  valoracion_kids: 4.5
-  imagen: "/assets/img/restaurantes/la-taberna-del-pescador.jpg"
-  instagram: "taberna_pescador_conil"
-  ultima_verificacion: "2025-04-30"
-  lat: 36.2774
-  lng: -6.0854
+    Es probablemente la propuesta más completa de la zona: parque de bolas,
+    minisala de cine y jardín exclusivo para niños separado por una
+    cristalera del comedor adulto. Comes viendo a tus hijos jugar.
+  descripcion_general: "Beer garden de inspiración americana con hamburguesas, parrilla y más de 40 cervezas artesanales."
+  direccion: "Calle de la Hijuela del Tío Gilito, s/n, 11500 El Puerto de Santa María"
+  valoracion_kids: 4.8
+  imagen: "/assets/img/restaurantes/the-cabin.jpg"
+  instagram: "thecabinbeer"
+  ultima_verificacion: "2026-05-06"
+  lat: 36.6010
+  lng: -6.2855
   tags:
     tronas: true
     carta_infantil: true
     zona_juegos: true
     cambiador: true
-    terraza: false
-    mascotas: false
+    terraza: true
+    mascotas: true
     accesible: true
-    opciones_saludables: true
+    opciones_saludables: false
   precio: "€€"
-  horario: "Mar–Dom 13:00–16:00, 20:00–23:00"
+  horario: "Mié–Lun 12:30–24:00 (cerrado martes)"
