@@ -138,44 +138,38 @@ layout: default
             {% endif %}
           </div>
 
+          <div class="detalle__info">
+            <div class="detalle__panel-row">
+              <div class="detalle__panel-label">Dirección</div>
+              <div class="detalle__panel-value">{{ page.direccion }}</div>
+            </div>
+            {% if page.web %}
+            <div class="detalle__panel-row">
+              <div class="detalle__panel-label">Web</div>
+              <div class="detalle__panel-value">
+                <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a>
+              </div>
+            </div>
+            {% endif %}
+            {% if page.instagram %}
+            <div class="detalle__panel-row">
+              <div class="detalle__panel-label">Instagram</div>
+              <div class="detalle__panel-value">
+                <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+
           {% if page.lat and page.lng %}
           <div class="detalle__mapa">
             <iframe src="https://maps.google.com/maps?q={{ page.lat }},{{ page.lng }}&z=15&output=embed" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           {% endif %}
 
+          <p class="detalle__verificacion">{{ t.ultima_verificacion }}: {{ page.ultima_verificacion }}</p>
+
         </div>
-
-        <aside class="detalle__panel">
-          <div class="detalle__panel-card">
-
-            <div class="detalle__panel-rows">
-              <div class="detalle__panel-row">
-                <div class="detalle__panel-label">Dirección</div>
-                <div class="detalle__panel-value">{{ page.direccion }}</div>
-              </div>
-              {% if page.web %}
-              <div class="detalle__panel-row">
-                <div class="detalle__panel-label">Web</div>
-                <div class="detalle__panel-value">
-                  <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a>
-                </div>
-              </div>
-              {% endif %}
-              {% if page.instagram %}
-              <div class="detalle__panel-row">
-                <div class="detalle__panel-label">Instagram</div>
-                <div class="detalle__panel-value">
-                  <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a>
-                </div>
-              </div>
-              {% endif %}
-            </div>
-
-            <p class="detalle__verificacion">{{ t.ultima_verificacion }}: {{ page.ultima_verificacion }}</p>
-
-          </div>
-        </aside>
 
       </div>
     </div>
