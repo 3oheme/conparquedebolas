@@ -643,41 +643,6 @@ a.tag {
     span { color: $terracota; }
   }
 
-  // El parque block
-  &__parque {
-    margin-bottom: 2.75rem;
-  }
-
-  &__parque-card {
-    background: #fff;
-    border-radius: 16px;
-    padding: 1.5rem 1.75rem;
-    border: 1px solid rgba($tinta-soft, 0.12);
-  }
-
-  &__parque-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem 1.5rem;
-  }
-
-  &__parque-label {
-    font-family: $font-mono;
-    font-size: 0.62rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $tinta-soft;
-    margin-bottom: 0.3rem;
-  }
-
-  &__parque-value {
-    font-family: $font-sans;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: $tinta;
-    letter-spacing: -0.01em;
-  }
-
   // El sitio block
   &__sitio {
     margin-bottom: 2.75rem;
@@ -758,12 +723,6 @@ a.tag {
   }
 
   // ─── Responsive ─────────────────────────────────────────────
-  @media (max-width: 960px) {
-    &__parque-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   @media (max-width: 640px) {
     &__imagen-wrap {
       height: 300px;
