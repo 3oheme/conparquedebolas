@@ -156,7 +156,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      todos = site.data["cadiz"]
+      todos = site.data["cadiz"].sort_by { |r| -r["valoracion_kids"].to_f }
 
       todos.each do |r|
         site.pages << RestaurantePage.new(site, site.source, r["slug"], r, "es")

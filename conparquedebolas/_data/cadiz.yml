@@ -36,35 +36,6 @@
     opciones_saludables: false
   precio: "€€"
 
-- nombre: "Mesón Los Nuevos Olivares"
-  slug: "meson-los-nuevos-olivares"
-  ciudad: "Jerez de la Frontera"
-  por_que_kids_friendly: >
-    Mesón con amplia zona exterior y parque infantil. Espacio de sobra
-    para que los niños se muevan mientras la familia come tranquila.
-  por_que_kids_friendly_en: >
-    Traditional inn with a large outdoor area and playground. Plenty of
-    space for kids to run around while the family eats in peace.
-  descripcion_general: "Cocina tradicional jerezana en un mesón con tablas, guisos y carnes a la brasa."
-  descripcion_general_en: "Traditional cuisine from Jerez: cold cuts, stews and grilled meats in a rustic inn."
-  direccion: "Av. Olivar de Rivero, 75, 11406 Jerez de la Frontera"
-  valoracion_kids: 4.0
-  imagen: "/assets/img/restaurantes/meson-los-nuevos-olivares.jpg"
-  web: "https://mesonlosnuevosolivares.es"
-  ultima_verificacion: "2026-05-06"
-  lat: 36.6855
-  lng: -6.1545
-  tags:
-    tronas: true
-    carta_infantil: false
-    zona_juegos: true
-    cambiador: false
-    terraza: true
-    mascotas: true
-    accesible: true
-    opciones_saludables: false
-  precio: "€€"
-
 - nombre: "Cervecería Retiro"
   slug: "cerveceria-retiro"
   ciudad: "Jerez de la Frontera"
@@ -78,7 +49,7 @@
   descripcion_general_en: "Tapas and sharing-plates bar with a varied menu and affordable prices."
   direccion: "Av. de Europa, 30, 11405 Jerez de la Frontera"
   valoracion_kids: 4.3
-  imagen: "/assets/img/restaurantes/cerveceria-retiro.jpg"
+  imagen: "/assets/img/restaurantes/el-retiro-jerez.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.7035
   lng: -6.1170
@@ -108,7 +79,7 @@
   descripcion_general_en: "Children's leisure centre with café and events room. Ideal for afternoon snacks and celebrations."
   direccion: "C. San Juan Bautista de la Salle, 11407 Jerez de la Frontera"
   valoracion_kids: 4.6
-  imagen: "/assets/img/restaurantes/badybu.jpg"
+  imagen: "/assets/img/restaurantes/badybu-jerez.jpg"
   web: "https://www.badybu.com"
   instagram: "badybu_eventos"
   ultima_verificacion: "2026-05-06"
@@ -140,7 +111,7 @@
   descripcion_general_en: "Tavern specialising in Iberian cured meats, small sandwiches, toasts and traditional Jerez stews."
   direccion: "Av. Voltaire, Edif. Albatros, 6, 11405 Jerez de la Frontera"
   valoracion_kids: 4.0
-  imagen: "/assets/img/restaurantes/altos-ibericos.jpg"
+  imagen: "/assets/img/restaurantes/altos-ibericos-jerez.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.7015
   lng: -6.1145
@@ -170,7 +141,7 @@
   descripcion_general_en: "Italian buffet of pasta, pizza, salads and desserts with more than 150 rotating recipes."
   direccion: "Ronda Aurora Boreal, s/n, CC Luz Shopping, 11408 Jerez de la Frontera"
   valoracion_kids: 4.4
-  imagen: "/assets/img/restaurantes/muerde-la-pasta-luz-shopping.jpg"
+  imagen: "/assets/img/restaurantes/muerde-la-pasta-jerez.jpg"
   web: "https://muerdelapasta.com/restaurantes-italianos-cerca/centro-comercial-luz-shopping/"
   ultima_verificacion: "2026-05-06"
   lat: 36.7110
@@ -201,7 +172,7 @@
   descripcion_general_en: "Jerez's largest Japanese/Asian à la carte buffet. Over 200 dishes: sushi, griddle, wok, seafood and desserts."
   direccion: "Av. de Europa, 13B, 11405 Jerez de la Frontera"
   valoracion_kids: 4.2
-  imagen: "/assets/img/restaurantes/hikari-sushi-jerez.jpg"
+  imagen: "/assets/img/restaurantes/hikari-jerez.jpg"
   web: "https://www.restaurantehikari.com"
   instagram: "hikari.sushi.jerez"
   ultima_verificacion: "2026-05-06"
@@ -237,7 +208,7 @@
   descripcion_general_en: "Classic American food: burgers, ribs, fajitas, salads and desserts."
   direccion: "C/ del Vivero, 2, CC Vistahermosa, 11500 El Puerto de Santa María"
   valoracion_kids: 4.0
-  imagen: "/assets/img/restaurantes/fosters-hollywood-vistahermosa.jpg"
+  imagen: "/assets/img/restaurantes/fosters-vistahermosa.jpg"
   web: "https://fostershollywood.es/restaurantes/cadiz/el-puerto-de-santa-maria/fh-vistahermosa"
   ultima_verificacion: "2026-05-06"
   lat: 36.6010
@@ -268,7 +239,7 @@
   descripcion_general_en: "Italian pizzeria open since 1993, specialising in thin-crust baked pizza and homemade tiramisú."
   direccion: "C. Paloma Zurita, 1, 11500 El Puerto de Santa María"
   valoracion_kids: 4.1
-  imagen: "/assets/img/restaurantes/pizzeria-blanca-paloma.jpg"
+  imagen: "/assets/img/restaurantes/blanca-paloma-el-puerto.jpg"
   web: "https://pizzeriablancapaloma.com"
   instagram: "pizzeriablancapaloma"
   ultima_verificacion: "2026-05-06"
@@ -332,7 +303,7 @@
   descripcion_general_en: "Irish pub with international food: breakfasts, brunch, burgers, curries and meats."
   direccion: "Carretera CA-603 Puerto-Rota, km 5.5, 11500 El Puerto de Santa María"
   valoracion_kids: 4.2
-  imagen: "/assets/img/restaurantes/the-shamrock.jpg"
+  imagen: "/assets/img/restaurantes/shamrock.jpg"
   web: "https://www.shamrockbarandeatery.com"
   ultima_verificacion: "2026-05-06"
   lat: 36.6175
@@ -363,7 +334,7 @@
   descripcion_general_en: "Argentine-Andalusian grill: grilled meats, sharing starters and homemade desserts."
   direccion: "Av. Fuentebravia, km 4, 11500 El Puerto de Santa María"
   valoracion_kids: 4.1
-  imagen: "/assets/img/restaurantes/la-parrilla-baileys.jpg"
+  imagen: "/assets/img/restaurantes/parrilla-baileys.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.6080
   lng: -6.2810
@@ -393,7 +364,7 @@
   descripcion_general_en: "American-inspired beer garden with burgers, grilled food and over 40 craft beers."
   direccion: "Calle de la Hijuela del Tío Gilito, s/n, 11500 El Puerto de Santa María"
   valoracion_kids: 4.8
-  imagen: "/assets/img/restaurantes/the-cabin.jpg"
+  imagen: "/assets/img/restaurantes/the-cabin-beer-garden.jpg"
   instagram: "thecabinbeer"
   ultima_verificacion: "2026-05-06"
   lat: 36.6010
