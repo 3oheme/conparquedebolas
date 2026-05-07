@@ -19,14 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Con Parque de Bolas
-email: bohemegm@gmail.com
+email: hola@conparquedebolas.com
 description: >-
   Restaurantes kids-friendly en la provincia de Cádiz y toda España.
   Encuentra los mejores sitios para comer con niños.
 baseurl: ""
 url: "https://conparquedebolas.com"
 lang: es
-github_username: palomoduarte
 header_pages: []
 
 # Build settings

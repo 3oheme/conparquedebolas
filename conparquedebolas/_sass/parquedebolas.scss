@@ -1,5 +1,25 @@
 .site-nav { display: none; }
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-title {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-email {
+  font-size: 0.9rem;
+  color: #2d6a2d;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
 .lang-switch {
   float: right;
   font-size: 0.85rem;
