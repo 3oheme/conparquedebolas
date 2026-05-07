@@ -101,7 +101,13 @@ layout: default
           <div class="detalle__info-card">
             <div class="detalle__info-item">
               <div class="detalle__info-label">Dirección</div>
-              <div class="detalle__info-value">{{ page.direccion }}</div>
+              <div class="detalle__info-value">
+                {% if page.lat and page.lng %}
+                <a href="https://maps.google.com/?q={{ page.lat }},{{ page.lng }}" target="_blank" rel="noopener">{{ page.direccion }}</a>
+                {% else %}
+                <a href="https://maps.google.com/?q={{ page.direccion | url_encode }}" target="_blank" rel="noopener">{{ page.direccion }}</a>
+                {% endif %}
+              </div>
             </div>
             {% if page.web %}
             <div class="detalle__info-item">
