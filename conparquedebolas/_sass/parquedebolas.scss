@@ -160,6 +160,7 @@
   overflow: hidden;
   background: #fff;
   transition: box-shadow 0.2s;
+  position: relative;
 
   &:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
 
@@ -209,6 +210,12 @@
   &__nombre {
     font-size: 1.1rem;
     margin: 0 0 0.5rem;
+
+    a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
   }
 
   &__kids {
@@ -222,6 +229,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
+    position: relative;
+    z-index: 1;
   }
 }
 
