@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{%- assign _lang = page.lang | default: "es" -%}
+{%- assign t = site.data.i18n[_lang] -%}
+{%- if _lang == "en" -%}{%- assign lang_prefix = "/en" -%}{%- else -%}{%- assign lang_prefix = "" -%}{%- endif -%}
+
+<div class="contacto">
+  <header class="listing-header">
+    <h1>{{ t.contacto_titulo }}</h1>
+    <p class="listing-header__sub">{{ t.contacto_intro }}</p>
+  </header>
+
+  <form class="contacto-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ lang_prefix }}/gracias/">
+    <input type="hidden" name="form-name" value="contacto">
+    <input type="hidden" name="idioma" value="{{ _lang }}">
+    <p class="contacto-form__honeypot"><label>No rellenar: <input name="bot-field"></label></p>
+
+    <div class="form-field">
+      <label for="nombre_restaurante">{{ t.campo_restaurante }} *</label>
+      <input type="text" id="nombre_restaurante" name="nombre_restaurante" required>
+    </div>
+
+    <div class="form-field">
+      <label for="ciudad">{{ t.campo_ciudad }} *</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+    </div>
+
+    <div class="form-field form-row">
+      <div class="form-field">
+        <label for="nombre_contacto">{{ t.campo_nombre }} *</label>
+        <input type="text" id="nombre_contacto" name="nombre_contacto" required>
+      </div>
+      <div class="form-field">
+        <label for="email">{{ t.campo_email }} *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="telefono">{{ t.campo_telefono }}</label>
+      <input type="tel" id="telefono" name="telefono">
+    </div>
+
+    <div class="form-field">
+      <label for="descripcion">{{ t.campo_descripcion }} *</label>
+      <textarea id="descripcion" name="descripcion" rows="5" placeholder="{{ t.campo_descripcion_hint }}" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">{{ t.enviar }}</button>
+  </form>
+</div>

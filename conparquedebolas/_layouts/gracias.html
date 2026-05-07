@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{%- assign _lang = page.lang | default: "es" -%}
+{%- assign t = site.data.i18n[_lang] -%}
+{%- if _lang == "en" -%}{%- assign lang_prefix = "/en" -%}{%- else -%}{%- assign lang_prefix = "" -%}{%- endif -%}
+
+<div class="gracias">
+  <h1>{{ t.gracias_titulo }}</h1>
+  <p>{{ t.gracias_texto }}</p>
+  <a href="{{ lang_prefix }}/" class="detalle__volver">← {{ t.gracias_volver }}</a>
+</div>

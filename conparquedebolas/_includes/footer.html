@@ -1,6 +1,15 @@
 <footer class="site-footer">
   <div class="wrapper footer-wrapper">
     <span class="footer-title">{{ site.title | escape }}</span>
-    <a href="mailto:{{ site.email }}" class="footer-email">{{ site.email }}</a>
+    <div class="footer-links">
+      {%- assign _lang = page.lang | default: "es" -%}
+      {%- assign t = site.data.i18n[_lang] -%}
+      {%- if _lang == "en" -%}
+        <a href="/en/contacto/" class="footer-contacto">{{ t.contacto_link }}</a>
+      {%- else -%}
+        <a href="/contacto/" class="footer-contacto">{{ t.contacto_link }}</a>
+      {%- endif -%}
+      <a href="mailto:{{ site.email }}" class="footer-email">{{ site.email }}</a>
+    </div>
   </div>
 </footer>

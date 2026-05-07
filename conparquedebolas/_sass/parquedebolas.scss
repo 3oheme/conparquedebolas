@@ -13,11 +13,95 @@
   font-size: 0.9rem;
 }
 
-.footer-email {
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-email, .footer-contacto {
   font-size: 0.9rem;
   color: #2d6a2d;
   text-decoration: none;
   &:hover { text-decoration: underline; }
+}
+
+// Página de contacto
+.contacto {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contacto-form {
+  margin-top: 2rem;
+
+  &__honeypot { display: none; }
+}
+
+.form-field {
+  margin-bottom: 1.25rem;
+
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.35rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+      border-color: #2d6a2d;
+      box-shadow: 0 0 0 2px rgba(45, 106, 45, 0.15);
+    }
+  }
+
+  textarea { resize: vertical; }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 0;
+
+  .form-field { margin-bottom: 0; }
+
+  @media (max-width: 540px) { grid-template-columns: 1fr; }
+}
+
+.btn-enviar {
+  background: #2d6a2d;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  &:hover { background: #245424; }
+}
+
+// Página de gracias
+.gracias {
+  max-width: 640px;
+  margin: 3rem auto;
+  text-align: center;
+
+  h1 { margin-bottom: 1rem; }
+  p  { color: #555; margin-bottom: 2rem; }
 }
 
 .lang-switch {

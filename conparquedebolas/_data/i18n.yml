@@ -11,6 +11,22 @@ es:
   restaurantes_label: "restaurantes kids-friendly"
   todas_ciudades: "Todas las ciudades"
   volver: "Volver al listado"
+  contacto_link: "¿Tienes un restaurante?"
+  contacto_titulo: "¿Tienes un restaurante kids-friendly?"
+  contacto_intro: >
+    Si quieres que tu restaurante aparezca en Con Parque de Bolas,
+    cuéntanos un poco sobre él. Te respondemos en menos de 48 horas.
+  campo_restaurante: "Nombre del restaurante"
+  campo_ciudad: "Ciudad"
+  campo_nombre: "Tu nombre"
+  campo_email: "Tu email"
+  campo_telefono: "Teléfono (opcional)"
+  campo_descripcion: "¿Por qué es kids-friendly?"
+  campo_descripcion_hint: "Cuéntanos qué lo hace especial para las familias: zona de juegos, tronas, carta infantil, paciencia del personal..."
+  enviar: "Enviar"
+  gracias_titulo: "¡Gracias!"
+  gracias_texto: "Hemos recibido tu mensaje. Te responderemos en menos de 48 horas."
+  gracias_volver: "Volver al inicio"
   tags:
     tronas: "Tronas"
     carta_infantil: "Carta infantil"
@@ -34,6 +50,22 @@ en:
   restaurantes_label: "kid-friendly restaurants"
   todas_ciudades: "All cities"
   volver: "Back to listings"
+  contacto_link: "Own a restaurant?"
+  contacto_titulo: "Do you run a kid-friendly restaurant?"
+  contacto_intro: >
+    If you'd like your restaurant listed on Con Parque de Bolas,
+    tell us a bit about it. We'll get back to you within 48 hours.
+  campo_restaurante: "Restaurant name"
+  campo_ciudad: "City"
+  campo_nombre: "Your name"
+  campo_email: "Your email"
+  campo_telefono: "Phone (optional)"
+  campo_descripcion: "Why is it kid-friendly?"
+  campo_descripcion_hint: "Tell us what makes it special for families: play area, high chairs, kids' menu, patient staff..."
+  enviar: "Send"
+  gracias_titulo: "Thank you!"
+  gracias_texto: "We've received your message and will get back to you within 48 hours."
+  gracias_volver: "Back to home"
   tags:
     tronas: "High chairs"
     carta_infantil: "Kids' menu"
