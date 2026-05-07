@@ -2,12 +2,16 @@
 layout: default
 ---
 
+{%- assign _lang = page.lang | default: "es" -%}{% assign t = site.data.i18n[_lang] %}
+{% if page.lang == "en" %}{% assign lang_prefix = "/en" %}{% assign f_pq = "por_que_kids_friendly_en" %}{% assign f_desc = "descripcion_general_en" %}{% else %}{% assign lang_prefix = "" %}{% assign f_pq = "por_que_kids_friendly" %}{% assign f_desc = "descripcion_general" %}{% endif %}
+{% assign ciudad_slug = page.ciudad | slugify: "latin" %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "{{ page.nombre | escape }}",
-  "description": "{{ page.por_que_kids_friendly | strip_newlines | escape }}",
+  "description": "{{ page[f_pq] | strip_newlines | escape }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ page.direccion | escape }}",
@@ -43,7 +47,9 @@ layout: default
   <div class="detalle__contenido">
     <header class="detalle__header">
       <div class="detalle__meta">
-        <span class="detalle__ciudad">{{ page.ciudad }}</span>
+        <span class="detalle__ciudad">
+          <a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/">{{ page.ciudad }}</a>
+        </span>
         <span class="card__rating">★ {{ page.valoracion_kids }}</span>
         {% if page.precio %}<span class="card__precio">{{ page.precio }}</span>{% endif %}
       </div>
@@ -51,29 +57,29 @@ layout: default
     </header>
 
     <div class="detalle__kids-friendly">
-      <p>{{ page.por_que_kids_friendly }}</p>
+      <p>{{ page[f_pq] }}</p>
     </div>
 
-    {% if page.descripcion_general %}
-    <p class="detalle__descripcion">{{ page.descripcion_general }}</p>
+    {% if page[f_desc] %}
+    <p class="detalle__descripcion">{{ page[f_desc] }}</p>
     {% endif %}
 
-    {% assign ciudad_slug = page.ciudad | slugify: "latin" %}
+    <h2 class="detalle__seccion">{{ t.caracteristicas }}</h2>
     <div class="detalle__tags">
-      {% if page.tags.tronas %}<a href="/ciudades/{{ ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
-      {% if page.tags.carta_infantil %}<a href="/ciudades/{{ ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
-      {% if page.tags.zona_juegos %}<a href="/ciudades/{{ ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
-      {% if page.tags.cambiador %}<a href="/ciudades/{{ ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
-      {% if page.tags.terraza %}<a href="/ciudades/{{ ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
-      {% if page.tags.mascotas %}<a href="/ciudades/{{ ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
-      {% if page.tags.accesible %}<a href="/ciudades/{{ ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
-      {% if page.tags.opciones_saludables %}<a href="/ciudades/{{ ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
+      {% if page.tags.tronas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>{% endif %}
+      {% if page.tags.carta_infantil %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>{% endif %}
+      {% if page.tags.zona_juegos %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>{% endif %}
+      {% if page.tags.cambiador %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>{% endif %}
+      {% if page.tags.terraza %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>{% endif %}
+      {% if page.tags.mascotas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>{% endif %}
+      {% if page.tags.accesible %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>{% endif %}
+      {% if page.tags.opciones_saludables %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>{% endif %}
     </div>
 
     <div class="detalle__info">
       <p>📍 {{ page.direccion }}</p>
-{% if page.web %}
-      <p>🌐 <a href="{{ page.web }}" target="_blank" rel="noopener">Web</a></p>
+      {% if page.web %}
+      <p>🌐 <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a></p>
       {% endif %}
       {% if page.instagram %}
       <p>📸 <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a></p>
@@ -86,8 +92,8 @@ layout: default
     </div>
     {% endif %}
 
-    <p class="detalle__verificacion">Última verificación: {{ page.ultima_verificacion }}</p>
+    <p class="detalle__verificacion">{{ t.ultima_verificacion }}: {{ page.ultima_verificacion }}</p>
 
-    <a href="/" class="detalle__volver">← Volver al listado</a>
+    <a href="{{ lang_prefix }}/" class="detalle__volver">← {{ t.volver }}</a>
   </div>
 </article>

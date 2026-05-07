@@ -1,5 +1,17 @@
 .site-nav { display: none; }
 
+.lang-switch {
+  float: right;
+  font-size: 0.85rem;
+  color: #2d6a2d;
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #2d6a2d;
+  border-radius: 4px;
+  line-height: 2.4;
+  &:hover { background: #f0f7f0; text-decoration: none; }
+}
+
 .listing-header {
   text-align: center;
   padding: 2rem 0 1rem;
@@ -223,6 +235,13 @@ a.tag {
     margin-bottom: 1.5rem;
     border-radius: 8px;
     overflow: hidden;
+  }
+
+  &__seccion {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin: 1.5rem 0 0.75rem;
   }
 
   &__verificacion {

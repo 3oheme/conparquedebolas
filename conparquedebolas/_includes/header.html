@@ -1,0 +1,15 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {%- assign t = site.data.i18n[page.lang | default: "es"] -%}
+    {%- if page.lang == "en" -%}
+      <a class="site-title" rel="author" href="/en/">{{ site.title | escape }}</a>
+    {%- else -%}
+      <a class="site-title" rel="author" href="/">{{ site.title | escape }}</a>
+    {%- endif -%}
+    {%- if page.lang == "en" and page.alternate_url -%}
+      <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
+    {%- elsif page.has_en and page.alternate_url -%}
+      <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
+    {%- endif -%}
+  </div>
+</header>

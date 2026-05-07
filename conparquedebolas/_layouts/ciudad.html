@@ -2,28 +2,31 @@
 layout: default
 ---
 
+{%- assign _lang = page.lang | default: "es" -%}{% assign t = site.data.i18n[_lang] %}
+{% if page.lang == "en" %}{% assign lang_prefix = "/en" %}{% assign f_pq = "por_que_kids_friendly_en" %}{% else %}{% assign lang_prefix = "" %}{% assign f_pq = "por_que_kids_friendly" %}{% endif %}
+
 <div class="listing">
   <header class="listing-header">
-    <p class="listing-header__breadcrumb"><a href="/">← Todas las ciudades</a></p>
-    <h1>Restaurantes en {{ page.ciudad }}</h1>
-    <p class="listing-header__sub">{{ page.restaurantes | size }} restaurantes kids-friendly</p>
+    <p class="listing-header__breadcrumb"><a href="{{ lang_prefix }}/">← {{ t.todas_ciudades }}</a></p>
+    <h1>{{ t.restaurantes_en }} {{ page.ciudad }}</h1>
+    <p class="listing-header__sub">{{ page.restaurantes | size }} {{ t.restaurantes_label }}</p>
   </header>
 
   <nav class="filtros-nav">
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>
-    <a href="/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>
+    <a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>
   </nav>
 
   <div class="cards">
     {% for r in page.restaurantes %}
     <article class="card">
-      <a href="/restaurantes/{{ r.slug }}/" class="card__imagen-link">
+      <a href="{{ lang_prefix }}/restaurantes/{{ r.slug }}/" class="card__imagen-link">
         <div class="card__imagen">
           <div class="card__imagen-placeholder">🍽️</div>
         </div>
@@ -33,19 +36,17 @@ layout: default
           <span class="card__rating">★ {{ r.valoracion_kids }}</span>
           {% if r.precio %}<span class="card__precio">{{ r.precio }}</span>{% endif %}
         </div>
-        <h3 class="card__nombre">
-          <a href="/restaurantes/{{ r.slug }}/">{{ r.nombre }}</a>
-        </h3>
-        <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
+        <h3 class="card__nombre"><a href="{{ lang_prefix }}/restaurantes/{{ r.slug }}/">{{ r.nombre }}</a></h3>
+        <p class="card__kids">{{ r[f_pq] }}</p>
         <div class="card__tags">
-          {% if r.tags.tronas %}<a href="/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
-          {% if r.tags.carta_infantil %}<a href="/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
-          {% if r.tags.zona_juegos %}<a href="/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
-          {% if r.tags.cambiador %}<a href="/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
-          {% if r.tags.terraza %}<a href="/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
-          {% if r.tags.mascotas %}<a href="/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
-          {% if r.tags.accesible %}<a href="/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
-          {% if r.tags.opciones_saludables %}<a href="/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
+          {% if r.tags.tronas %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>{% endif %}
+          {% if r.tags.carta_infantil %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>{% endif %}
+          {% if r.tags.zona_juegos %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>{% endif %}
+          {% if r.tags.cambiador %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>{% endif %}
+          {% if r.tags.terraza %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>{% endif %}
+          {% if r.tags.mascotas %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>{% endif %}
+          {% if r.tags.accesible %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>{% endif %}
+          {% if r.tags.opciones_saludables %}<a href="{{ lang_prefix }}/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>{% endif %}
         </div>
       </div>
     </article>
