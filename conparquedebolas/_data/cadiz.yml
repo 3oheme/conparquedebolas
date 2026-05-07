@@ -189,6 +189,102 @@
     opciones_saludables: true
   precio: "€€"
 
+- nombre: "Rancho Cortesano - Museo de la Miel"
+  slug: "rancho-cortesano"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Restaurante ecológico dentro del Museo de la Miel y las Abejas, en
+    plena campiña jerezana. Tiene parque infantil, animales de granja
+    (burros, gallinas, pavos…) y talleres didácticos sobre apicultura.
+    Plan de domingo perfecto para familias.
+  por_que_kids_friendly_en: >
+    Organic restaurant inside the Honey and Bees Museum, deep in the
+    Jerez countryside. It has a kids' playground, farm animals
+    (donkeys, hens, turkeys…) and educational workshops on beekeeping.
+    A perfect Sunday plan for families.
+  descripcion_general: "Restaurante ecológico y vegetariano con productos del propio huerto. Pan y dulces sin azúcar añadido. Menú adulto en torno a 15-17 €."
+  descripcion_general_en: "Organic, vegetarian-friendly restaurant using produce from its own garden. Bread and pastries with no added sugar. Adult menu around €15-17."
+  direccion: "Ctra. de Cortes (A-2003), Desviación El Torno km 2 (CA-3111), 11593 Jerez de la Frontera"
+  valoracion_kids: 4.5
+  imagen: "/assets/img/restaurantes/rancho-cortesano-jerez.jpg"
+  web: "https://ranchocortesano.net"
+  ultima_verificacion: "2026-05-07"
+  lat: 36.5950
+  lng: -6.1990
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: false
+    terraza: true
+    mascotas: true
+    accesible: true
+    opciones_saludables: true
+  precio: "€"
+
+- nombre: "Bodegón de la Blanca Paloma"
+  slug: "bodegon-blanca-paloma"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Restaurante rociero de campo a 3 km de Jerez con jardines amplísimos,
+    campo de fútbol, zona de césped y animales de granja. Hay sitio para
+    que los niños corran sin parar mientras la mesa se alarga.
+  por_que_kids_friendly_en: >
+    Country-style "rociero" restaurant 3 km from Jerez with huge gardens,
+    a football pitch, lawn areas and farm animals. Plenty of space for
+    kids to run around while the meal stretches on.
+  descripcion_general: "Cocina tradicional andaluza para grupos en finca rural con jardines, parking y aforo grande. Ideal para celebraciones."
+  descripcion_general_en: "Traditional Andalusian cuisine for groups in a rural setting with gardens, parking and large capacity. Ideal for celebrations."
+  direccion: "Ctra. Trebujena, km 2,5, Cañada del Moro, 11407 Jerez de la Frontera"
+  valoracion_kids: 4.4
+  imagen: "/assets/img/restaurantes/bodegon-blanca-paloma-jerez.jpg"
+  web: "https://www.restauranteblancapaloma.com"
+  ultima_verificacion: "2026-05-07"
+  lat: 36.7150
+  lng: -6.1350
+  tags:
+    tronas: true
+    carta_infantil: false
+    zona_juegos: true
+    cambiador: false
+    terraza: true
+    mascotas: true
+    accesible: true
+    opciones_saludables: false
+  precio: "€€"
+
+- nombre: "Flanagan"
+  slug: "flanagan-jerez"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Hamburguesería americana con zona de juegos dentro del local. Tienen
+    carta sin gluten y sin lactosa, así que cubren bien las intolerancias
+    típicas de los peques. Buen plan informal entre semana.
+  por_que_kids_friendly_en: >
+    American burger joint with an indoor play area. They have gluten-free
+    and lactose-free options, so they cover the typical kids' food
+    intolerances. A great casual weekday plan.
+  descripcion_general: "Hamburguesería de estilo americano con carnes seleccionadas (gallega, retinto, black angus) molidas en casa, pollo frito y ensaladas."
+  descripcion_general_en: "American-style burger joint with hand-ground select meats (Galician, retinto, black angus), fried chicken and salads."
+  direccion: "Av. de la Cruz Roja, 15, 11407 Jerez de la Frontera"
+  valoracion_kids: 4.2
+  imagen: "/assets/img/restaurantes/flanagan-jerez.jpg"
+  web: "https://restauranteflanagan.com"
+  instagram: "flanaganfgb"
+  ultima_verificacion: "2026-05-07"
+  lat: 36.6960
+  lng: -6.1350
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: false
+    terraza: false
+    mascotas: false
+    accesible: true
+    opciones_saludables: true
+  precio: "€€"
+
 # ─────────────────────────────────────────────────────────────
 # EL PUERTO DE SANTA MARÍA
 # ─────────────────────────────────────────────────────────────
