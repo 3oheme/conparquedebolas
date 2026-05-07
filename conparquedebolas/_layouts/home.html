@@ -61,7 +61,7 @@ layout: default
   {% else %}
     {% assign ciudad_nombres = site.data.cadiz | map: "ciudad" | uniq %}
     {% for nombre in ciudad_nombres %}
-    {% assign rs = site.data.cadiz | where: "ciudad", nombre %}
+    {% assign rs = site.data.cadiz | where: "ciudad", nombre | sort: "valoracion_kids" | reverse %}
     {% assign ciudad_slug = nombre | slugify: "latin" %}
     <section class="ciudad">
       <h2 class="ciudad__titulo"><a href="/ciudades/{{ ciudad_slug }}/">{{ nombre }}</a></h2>
