@@ -1,6 +1,7 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
-    {%- assign t = site.data.i18n[page.lang | default: "es"] -%}
+    {%- assign _lang = page.lang | default: "es" -%}
+    {%- assign t = site.data.i18n[_lang] -%}
     {%- if page.lang == "en" -%}
       <a class="site-title" rel="author" href="/en/">{{ site.title | escape }}</a>
     {%- else -%}

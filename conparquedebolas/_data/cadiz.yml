@@ -13,7 +13,11 @@
     Pionero en Jerez en tener parque de bolas dentro del restaurante,
     con monitores que vigilan a los niños mientras los padres comen.
     Casi 20 años recibiendo familias.
+  por_que_kids_friendly_en: >
+    Jerez's pioneer in having an indoor ball pit, with monitors watching
+    the kids while parents eat. Nearly 20 years welcoming families.
   descripcion_general: "Pizzería italiana con 27 tipos de pizzas, además de pastas, carnes y pescados a la parrilla. Buena relación calidad-precio."
+  descripcion_general_en: "Italian pizzeria with 27 types of pizza, plus pasta, meat and grilled fish. Great value for money."
   direccion: "Av. del Mediterráneo, 2E, 11406 Jerez de la Frontera"
   valoracion_kids: 4.5
   imagen: "/assets/img/restaurantes/piamonte-jerez.jpg"
@@ -38,7 +42,11 @@
   por_que_kids_friendly: >
     Mesón con amplia zona exterior y parque infantil. Espacio de sobra
     para que los niños se muevan mientras la familia come tranquila.
+  por_que_kids_friendly_en: >
+    Traditional inn with a large outdoor area and playground. Plenty of
+    space for kids to run around while the family eats in peace.
   descripcion_general: "Cocina tradicional jerezana en un mesón con tablas, guisos y carnes a la brasa."
+  descripcion_general_en: "Traditional cuisine from Jerez: cold cuts, stews and grilled meats in a rustic inn."
   direccion: "Av. Olivar de Rivero, 75, 11406 Jerez de la Frontera"
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/meson-los-nuevos-olivares.jpg"
@@ -63,7 +71,11 @@
   por_que_kids_friendly: >
     Parque de bolas con monitores por 1 € (gratis si pides el menú infantil
     de 6 €). Muy popular para cumpleaños y celebraciones familiares.
+  por_que_kids_friendly_en: >
+    Ball pit with monitors for €1 (free with the €6 kids' menu).
+    Very popular for birthdays and family celebrations.
   descripcion_general: "Cervecería de tapas y raciones con menú variado y precio asequible."
+  descripcion_general_en: "Tapas and sharing-plates bar with a varied menu and affordable prices."
   direccion: "Av. de Europa, 30, 11405 Jerez de la Frontera"
   valoracion_kids: 4.3
   imagen: "/assets/img/restaurantes/cerveceria-retiro.jpg"
@@ -88,7 +100,12 @@
     Ludoteca con cafetería: parque de bolas de 5 metros con tobogán y
     trampolín. Pensado de raíz para niños, con monitores y zona de
     celebraciones para cumpleaños.
+  por_que_kids_friendly_en: >
+    Kids' play centre with café: 5-metre ball pit with slide and
+    trampoline. Designed from the ground up for children, with monitors
+    and a dedicated birthday party room.
   descripcion_general: "Centro de ocio infantil con cafetería y sala de eventos. Ideal para meriendas y celebraciones."
+  descripcion_general_en: "Children's leisure centre with café and events room. Ideal for afternoon snacks and celebrations."
   direccion: "C. San Juan Bautista de la Salle, 11407 Jerez de la Frontera"
   valoracion_kids: 4.6
   imagen: "/assets/img/restaurantes/badybu.jpg"
@@ -115,7 +132,12 @@
     Tabanco amplio en zona de Hipercor con espacio para niños y terraza
     cubierta. Cuentan con zona de juegos para que los más pequeños no
     se aburran durante el aperitivo.
+  por_que_kids_friendly_en: >
+    Spacious tavern near Hipercor with room for kids and a covered
+    terrace. They have a play area to keep little ones entertained
+    during aperitivo time.
   descripcion_general: "Tabanco-mesón especializado en ibéricos, montaditos, tostas y guisos tradicionales jerezanos."
+  descripcion_general_en: "Tavern specialising in Iberian cured meats, small sandwiches, toasts and traditional Jerez stews."
   direccion: "Av. Voltaire, Edif. Albatros, 6, 11405 Jerez de la Frontera"
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/altos-ibericos.jpg"
@@ -140,7 +162,12 @@
     Buffet libre italiano con "Pasta Park", una zona infantil dentro del
     propio local. Concepto pensado para familias: comes lo que quieras,
     los niños comen lo que quieran y juegan al lado.
+  por_que_kids_friendly_en: >
+    Italian all-you-can-eat buffet with a "Pasta Park" kids' zone inside
+    the restaurant. Built for families: eat what you want, kids eat what
+    they want and play right next to you.
   descripcion_general: "Buffet italiano de pastas, pizzas, ensaladas y postres con más de 150 recetas en rotación."
+  descripcion_general_en: "Italian buffet of pasta, pizza, salads and desserts with more than 150 rotating recipes."
   direccion: "Ronda Aurora Boreal, s/n, CC Luz Shopping, 11408 Jerez de la Frontera"
   valoracion_kids: 4.4
   imagen: "/assets/img/restaurantes/muerde-la-pasta-luz-shopping.jpg"
@@ -166,7 +193,12 @@
     Buffet asiático enorme (1.600 m², 370 plazas) con ambientación temática
     estilo anime/Akihabara y zona infantil. Niños menores de 100 cm comen
     gratis; entre 100 y 130 cm pagan menú infantil.
+  por_que_kids_friendly_en: >
+    Massive Asian buffet (1,600 m², 370 seats) with anime/Akihabara-style
+    theming and a kids' area. Children under 100 cm eat free;
+    between 100 and 130 cm they pay a kids' rate.
   descripcion_general: "El mayor buffet japonés/asiático a la carta de Jerez. Más de 200 platos: sushi, plancha, wok, mariscos y postres."
+  descripcion_general_en: "Jerez's largest Japanese/Asian à la carte buffet. Over 200 dishes: sushi, griddle, wok, seafood and desserts."
   direccion: "Av. de Europa, 13B, 11405 Jerez de la Frontera"
   valoracion_kids: 4.2
   imagen: "/assets/img/restaurantes/hikari-sushi-jerez.jpg"
@@ -197,7 +229,12 @@
     Cadena pensada de origen para familias: tronas, carta infantil con
     menús completos, zona de juegos y cambiador. Apuesta segura cuando
     los niños están especialmente exigentes.
+  por_que_kids_friendly_en: >
+    A chain designed from the start for families: high chairs, full kids'
+    menus, play area and changing table. A safe bet when the kids are
+    being particularly demanding.
   descripcion_general: "Cocina americana clásica: hamburguesas, costillas, fajitas, ensaladas y postres."
+  descripcion_general_en: "Classic American food: burgers, ribs, fajitas, salads and desserts."
   direccion: "C/ del Vivero, 2, CC Vistahermosa, 11500 El Puerto de Santa María"
   valoracion_kids: 4.0
   imagen: "/assets/img/restaurantes/fosters-hollywood-vistahermosa.jpg"
@@ -223,7 +260,12 @@
     Pizzería italiana clásica del Puerto al lado del recinto ferial. Local
     amplio con zona infantil donde los niños pueden jugar mientras comes
     una pizza fina al horno de leña.
+  por_que_kids_friendly_en: >
+    Classic Italian pizzeria in El Puerto, right next to the fairgrounds.
+    Spacious venue with a kids' area where children can play while you
+    enjoy a thin-crust wood-fired pizza.
   descripcion_general: "Pizzería italiana abierta en 1993, especializada en pizza fina al horno y tiramisú casero."
+  descripcion_general_en: "Italian pizzeria open since 1993, specialising in thin-crust baked pizza and homemade tiramisú."
   direccion: "C. Paloma Zurita, 1, 11500 El Puerto de Santa María"
   valoracion_kids: 4.1
   imagen: "/assets/img/restaurantes/pizzeria-blanca-paloma.jpg"
@@ -250,7 +292,12 @@
     Zona infantil con monitor/animador contratado para vigilar a los niños
     mientras los padres comen. Tienen incluso una sala de lactancia con
     privacidad para madres con bebés. Una de las mejores opciones del Puerto.
+  por_que_kids_friendly_en: >
+    Kids' area with a dedicated monitor to watch children while parents
+    eat. They even have a private nursing room for mothers with babies.
+    One of the best options in El Puerto.
   descripcion_general: "Trattoria-pizzería italiana con carta amplia, ingredientes importados y menú infantil."
+  descripcion_general_en: "Italian trattoria-pizzeria with a wide menu, imported ingredients and a kids' menu."
   direccion: "Carretera de Sanlúcar, 4, 11500 El Puerto de Santa María"
   valoracion_kids: 4.7
   imagen: "/assets/img/restaurantes/little-italy-el-puerto.jpg"
@@ -277,7 +324,12 @@
     Pub irlandés con terraza para más de 100 personas y zona de juegos
     para niños. Parking propio amplio (cómodo si vas con carrito) y
     actividades para peques los fines de semana.
+  por_que_kids_friendly_en: >
+    Irish pub with a terrace for over 100 people and a kids' play area.
+    Ample private parking (handy with a buggy) and weekend activities
+    for little ones.
   descripcion_general: "Pub irlandés con cocina internacional: desayunos, brunch, hamburguesas, currys y carnes."
+  descripcion_general_en: "Irish pub with international food: breakfasts, brunch, burgers, curries and meats."
   direccion: "Carretera CA-603 Puerto-Rota, km 5.5, 11500 El Puerto de Santa María"
   valoracion_kids: 4.2
   imagen: "/assets/img/restaurantes/the-shamrock.jpg"
@@ -303,7 +355,12 @@
     Brasería con zona de juegos para niños y terraza amplia. El olor a
     parrilla y el ambiente relajado la convierten en plan de comida
     familiar largo de fin de semana.
+  por_que_kids_friendly_en: >
+    Grill house with a kids' play area and a generous terrace. The smell
+    of the grill and laid-back vibe make it perfect for a long family
+    lunch at the weekend.
   descripcion_general: "Brasería argentina-andaluza: carnes a la parrilla, entrantes para compartir y postres caseros."
+  descripcion_general_en: "Argentine-Andalusian grill: grilled meats, sharing starters and homemade desserts."
   direccion: "Av. Fuentebravia, km 4, 11500 El Puerto de Santa María"
   valoracion_kids: 4.1
   imagen: "/assets/img/restaurantes/la-parrilla-baileys.jpg"
@@ -328,7 +385,12 @@
     Es probablemente la propuesta más completa de la zona: parque de bolas,
     minisala de cine y jardín exclusivo para niños separado por una
     cristalera del comedor adulto. Comes viendo a tus hijos jugar.
+  por_que_kids_friendly_en: >
+    Probably the most complete option in the area: ball pit, mini cinema
+    room and a kids-only garden separated from the adult dining room by
+    a glass partition. You eat while watching your children play.
   descripcion_general: "Beer garden de inspiración americana con hamburguesas, parrilla y más de 40 cervezas artesanales."
+  descripcion_general_en: "American-inspired beer garden with burgers, grilled food and over 40 craft beers."
   direccion: "Calle de la Hijuela del Tío Gilito, s/n, 11500 El Puerto de Santa María"
   valoracion_kids: 4.8
   imagen: "/assets/img/restaurantes/the-cabin.jpg"
