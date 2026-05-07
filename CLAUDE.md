@@ -7,7 +7,7 @@ Web estática que lista restaurantes kids-friendly en la provincia de Cádiz (co
 **Repo:** `github.com/3oheme/conparquedebolas`  
 **Producción:** `https://conparquedebolas.com` (DNS en Cloudflare → Cloudflare Pages, SSL automático)  
 **Email:** `hola@conparquedebolas.com` (Cloudflare Email Routing → Gmail)  
-**Formulario:** Web3Forms (key: `4de07266-06f2-4160-8d2e-f19bfbecff2d`)  
+**Formulario:** Web3Forms (regenerar key en web3forms.com si hay spam)  
 **Stack:** Jekyll 4.3 + Ruby 3.3 + YAML + JS vanilla
 
 ### Estructura del proyecto
