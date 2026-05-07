@@ -5,8 +5,9 @@
 Web estática que lista restaurantes kids-friendly en la provincia de Cádiz (con arquitectura preparada para escalar a otras provincias).
 
 **Repo:** `github.com/3oheme/conparquedebolas`  
-**Producción:** `https://conparquedebolas.com` (DNS en Cloudflare → Netlify, SSL via Let's Encrypt)  
+**Producción:** `https://conparquedebolas.com` (DNS en Cloudflare → Cloudflare Pages, SSL automático)  
 **Email:** `hola@conparquedebolas.com` (Cloudflare Email Routing → Gmail)  
+**Formulario:** Web3Forms (key: `4de07266-06f2-4160-8d2e-f19bfbecff2d`)  
 **Stack:** Jekyll 4.3 + Ruby 3.3 + YAML + JS vanilla
 
 ### Estructura del proyecto
@@ -171,8 +172,9 @@ git push          # ← único deploy
 git checkout dev  # volver a dev para seguir trabajando
 ```
 
-> Netlify está configurado para ignorar builds de cualquier rama que no sea `main` (`ignore` en `netlify.toml`).  
-> GitHub Pages está desactivado — el site vive únicamente en Netlify.  
+> El hosting es Cloudflare Pages — builds ilimitados en el plan gratuito.  
+> GitHub Pages está desactivado — el site vive únicamente en Cloudflare Pages.  
+> Cloudflare Pages despliega automáticamente cada push a `main`.  
 > Si el push falla por tamaño (imágenes), ejecutar primero: `git config http.postBuffer 524288000`
 
 ---
