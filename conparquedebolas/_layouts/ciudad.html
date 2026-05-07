@@ -28,7 +28,8 @@ layout: default
     <article class="card">
       <a href="{{ lang_prefix }}/restaurantes/{{ r.slug }}/" class="card__imagen-link">
         <div class="card__imagen">
-          <div class="card__imagen-placeholder">🍽️</div>
+          {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }}" loading="lazy">
+          {% else %}<div class="card__imagen-placeholder">🍽️</div>{% endif %}
         </div>
       </a>
       <div class="card__body">

@@ -41,7 +41,11 @@ layout: default
 
 <article class="detalle">
   <div class="detalle__imagen">
-    <div class="detalle__imagen-placeholder">🍽️</div>
+    {% if page.imagen %}
+      <img src="{{ page.imagen }}" alt="{{ page.nombre }}" loading="lazy">
+    {% else %}
+      <div class="detalle__imagen-placeholder">🍽️</div>
+    {% endif %}
   </div>
 
   <div class="detalle__contenido">
