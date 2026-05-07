@@ -119,15 +119,29 @@ El site queda disponible en `http://localhost:4000/`.
 1. Crear `conparquedebolas/_data/[provincia].yml` con la lista de restaurantes
 2. En `_plugins/restaurantes_generator.rb`, añadir la nueva fuente de datos al método `generate`
 
-### Hacer deploy
+### Flujo de trabajo: ramas
 
-El deploy es automático: cada `git push` a `main` dispara un build en Netlify.
+El repositorio tiene dos ramas:
+
+- **`dev`** — desarrollo diario. Commits libres, sin coste de build.
+- **`main`** — producción. Cada push dispara un build en Netlify.
+
+Flujo normal:
 
 ```bash
-git add .
+# Trabajar en dev
+git checkout dev
+git add archivo
 git commit -m "descripción del cambio"
-git push
+
+# Cuando el bloque de trabajo está listo para producción
+git checkout main
+git merge dev
+git push          # ← único deploy
+git checkout dev  # volver a dev para seguir trabajando
 ```
+
+> Netlify está configurado para ignorar builds de cualquier rama que no sea `main` (`ignore` en `netlify.toml`). Nunca hacer push directamente a `main` durante el desarrollo.
 
 ---
 

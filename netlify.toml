@@ -2,6 +2,7 @@
   base    = "conparquedebolas"
   command = "bundle exec jekyll build"
   publish = "_site"
+  ignore  = "[ \"$BRANCH\" != \"main\" ]"
 
 [build.environment]
   RUBY_VERSION = "3.3.0"
