@@ -40,64 +40,145 @@ layout: default
 </script>
 
 <article class="detalle">
-  <div class="detalle__imagen">
+
+  <div class="detalle__imagen-wrap">
     {% if page.imagen %}
       <img src="{{ page.imagen }}" alt="{{ page.nombre }}" loading="lazy">
     {% else %}
-      <div class="detalle__imagen-placeholder">🍽️</div>
+      <div class="detalle__imagen-empty">🍽️</div>
     {% endif %}
   </div>
 
-  <div class="detalle__contenido">
-    <header class="detalle__header">
-      <div class="detalle__meta">
-        <span class="detalle__ciudad">
-          <a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/">{{ page.ciudad }}</a>
-        </span>
-        <span class="card__rating">★ {{ page.valoracion_kids }}</span>
-        {% if page.precio %}<span class="card__precio">{{ page.precio }}</span>{% endif %}
+  <div class="detalle__body">
+    <div class="wrapper">
+      <div class="detalle__grid">
+
+        <div class="detalle__main">
+
+          <p class="detalle__breadcrumb">
+            <a href="{{ lang_prefix }}/">Inicio</a>
+            <span> · </span>
+            <a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/">{{ page.ciudad }}</a>
+            <span> · {{ page.nombre }}</span>
+          </p>
+
+          <div class="detalle__location">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ page.ciudad }}
+          </div>
+
+          <h1 class="detalle__nombre">{{ page.nombre }}<span class="detalle__dot">.</span></h1>
+
+          <div class="detalle__meta-row">
+            <span class="detalle__rating">★ {{ page.valoracion_kids }}</span>
+            {% if page.precio %}
+            <span class="detalle__meta-sep">·</span>
+            <span class="detalle__precio">{{ page.precio }}</span>
+            {% endif %}
+          </div>
+
+          <div class="detalle__tags">
+            {% if page.tags.tronas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>{% endif %}
+            {% if page.tags.carta_infantil %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>{% endif %}
+            {% if page.tags.zona_juegos %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>{% endif %}
+            {% if page.tags.cambiador %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>{% endif %}
+            {% if page.tags.terraza %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>{% endif %}
+            {% if page.tags.mascotas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>{% endif %}
+            {% if page.tags.accesible %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>{% endif %}
+            {% if page.tags.opciones_saludables %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>{% endif %}
+          </div>
+
+          <div class="detalle__parque">
+            <h2 class="detalle__section-title">El parque<span>.</span></h2>
+            <div class="detalle__parque-card">
+              <div class="detalle__parque-grid">
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Tronas</div>
+                  <div class="detalle__parque-value">{% if page.tags.tronas %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Menú infantil</div>
+                  <div class="detalle__parque-value">{% if page.tags.carta_infantil %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Zona de juegos</div>
+                  <div class="detalle__parque-value">{% if page.tags.zona_juegos %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Cambiador</div>
+                  <div class="detalle__parque-value">{% if page.tags.cambiador %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Terraza</div>
+                  <div class="detalle__parque-value">{% if page.tags.terraza %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Mascotas</div>
+                  <div class="detalle__parque-value">{% if page.tags.mascotas %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Accesible</div>
+                  <div class="detalle__parque-value">{% if page.tags.accesible %}Sí{% else %}No{% endif %}</div>
+                </div>
+                <div class="detalle__parque-item">
+                  <div class="detalle__parque-label">Op. saludables</div>
+                  <div class="detalle__parque-value">{% if page.tags.opciones_saludables %}Sí{% else %}No{% endif %}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detalle__sitio">
+            <h2 class="detalle__section-title">El sitio<span>.</span></h2>
+            <div class="detalle__kids-friendly">
+              <p>{{ page[f_pq] }}</p>
+            </div>
+            {% if page[f_desc] %}
+            <p class="detalle__descripcion">{{ page[f_desc] }}</p>
+            {% endif %}
+          </div>
+
+        </div>
+
+        <aside class="detalle__panel">
+          <div class="detalle__panel-card">
+
+            <div class="detalle__panel-rows">
+              <div class="detalle__panel-row">
+                <div class="detalle__panel-label">Dirección</div>
+                <div class="detalle__panel-value">{{ page.direccion }}</div>
+              </div>
+              {% if page.web %}
+              <div class="detalle__panel-row">
+                <div class="detalle__panel-label">Web</div>
+                <div class="detalle__panel-value">
+                  <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a>
+                </div>
+              </div>
+              {% endif %}
+              {% if page.instagram %}
+              <div class="detalle__panel-row">
+                <div class="detalle__panel-label">Instagram</div>
+                <div class="detalle__panel-value">
+                  <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a>
+                </div>
+              </div>
+              {% endif %}
+            </div>
+
+            {% if page.lat and page.lng %}
+            <div class="detalle__mapa">
+              <iframe src="https://maps.google.com/maps?q={{ page.lat }},{{ page.lng }}&z=15&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {% endif %}
+
+            <p class="detalle__verificacion">{{ t.ultima_verificacion }}: {{ page.ultima_verificacion }}</p>
+
+          </div>
+        </aside>
+
       </div>
-      <h1 class="detalle__nombre">{{ page.nombre }}</h1>
-    </header>
-
-    <div class="detalle__kids-friendly">
-      <p>{{ page[f_pq] }}</p>
     </div>
-
-    {% if page[f_desc] %}
-    <p class="detalle__descripcion">{{ page[f_desc] }}</p>
-    {% endif %}
-
-    <h2 class="detalle__seccion">{{ t.caracteristicas }}</h2>
-    <div class="detalle__tags">
-      {% if page.tags.tronas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>{% endif %}
-      {% if page.tags.carta_infantil %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>{% endif %}
-      {% if page.tags.zona_juegos %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>{% endif %}
-      {% if page.tags.cambiador %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>{% endif %}
-      {% if page.tags.terraza %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>{% endif %}
-      {% if page.tags.mascotas %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>{% endif %}
-      {% if page.tags.accesible %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>{% endif %}
-      {% if page.tags.opciones_saludables %}<a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>{% endif %}
-    </div>
-
-    <div class="detalle__info">
-      <p>📍 {{ page.direccion }}</p>
-      {% if page.web %}
-      <p>🌐 <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a></p>
-      {% endif %}
-      {% if page.instagram %}
-      <p>📸 <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a></p>
-      {% endif %}
-    </div>
-
-    {% if page.lat and page.lng %}
-    <div class="detalle__mapa">
-      <iframe src="https://maps.google.com/maps?q={{ page.lat }},{{ page.lng }}&z=15&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    {% endif %}
-
-    <p class="detalle__verificacion">{{ t.ultima_verificacion }}: {{ page.ultima_verificacion }}</p>
-
-    <a href="{{ lang_prefix }}/" class="detalle__volver">← {{ t.volver }}</a>
   </div>
+
 </article>

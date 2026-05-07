@@ -1,15 +1,24 @@
 <footer class="site-footer">
-  <div class="wrapper footer-wrapper">
-    <span class="footer-title">{{ site.title | escape }}</span>
-    <div class="footer-links">
-      {%- assign _lang = page.lang | default: "es" -%}
-      {%- assign t = site.data.i18n[_lang] -%}
-      {%- if _lang == "en" -%}
-        <a href="/en/contacto/" class="footer-contacto">{{ t.contacto_link }}</a>
-      {%- else -%}
-        <a href="/contacto/" class="footer-contacto">{{ t.contacto_link }}</a>
-      {%- endif -%}
-      <a href="mailto:{{ site.email }}" class="footer-email">{{ site.email }}</a>
+  {%- assign _lang = page.lang | default: "es" -%}
+  {%- assign t = site.data.i18n[_lang] -%}
+  <div class="footer-cta">
+    <div class="wrapper footer-cta__inner">
+      <p class="footer-cta__text">
+        {% if _lang == "en" %}
+          Do you know a place that's missing?
+          <em>Tell us and we'll add it.</em>
+        {% else %}
+          ¿Conoces un sitio que falte?
+          <em>Cuéntanoslo y lo añadimos.</em>
+        {% endif %}
+      </p>
+      <a href="{% if _lang == 'en' %}/en/contacto/{% else %}/contacto/{% endif %}" class="footer-cta__btn">
+        {{ t.contacto_link }}
+      </a>
     </div>
+  </div>
+  <div class="wrapper footer-meta">
+    <span class="footer-meta__title">con parque de bolas.</span>
+    <a href="mailto:{{ site.email }}" class="footer-meta__email">{{ site.email }}</a>
   </div>
 </footer>

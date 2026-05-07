@@ -1,5 +1,13 @@
 ---
 ---
 
+// Brand tokens — override Minima defaults before import
+$base-font-family: "Inter Tight", system-ui, sans-serif;
+$base-font-size:   16px;
+$text-color:       #1F1A14;
+$background-color: #F5EFE4;
+$brand-color:      #C2452D;
+$grey-color:       #5C5247;
+
 @import "minima";
 @import "parquedebolas";
