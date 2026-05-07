@@ -66,7 +66,6 @@ conparquedebolas/          ← raíz del repo git
     accesible: true
     opciones_saludables: false
   precio: "€€"                         # €, €€ o €€€ — opcional
-  horario: "Mar–Dom 13:00–16:30"       # opcional
 ```
 
 ### Tags disponibles

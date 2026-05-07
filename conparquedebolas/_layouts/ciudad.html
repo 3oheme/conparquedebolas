@@ -9,6 +9,17 @@ layout: default
     <p class="listing-header__sub">{{ page.restaurantes | size }} restaurantes kids-friendly</p>
   </header>
 
+  <nav class="filtros-nav">
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>
+    <a href="/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>
+  </nav>
+
   <div class="cards">
     {% for r in page.restaurantes %}
     <article class="card">
@@ -27,14 +38,14 @@ layout: default
         </h3>
         <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
         <div class="card__tags">
-          {% if r.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
-          {% if r.tags.carta_infantil %}<span class="tag">🧒 Carta infantil</span>{% endif %}
-          {% if r.tags.zona_juegos %}<span class="tag">🎮 Zona de juegos</span>{% endif %}
-          {% if r.tags.cambiador %}<span class="tag">🚻 Cambiador</span>{% endif %}
-          {% if r.tags.terraza %}<span class="tag">🌿 Terraza</span>{% endif %}
-          {% if r.tags.mascotas %}<span class="tag">🐶 Mascotas</span>{% endif %}
-          {% if r.tags.accesible %}<span class="tag">♿ Accesible</span>{% endif %}
-          {% if r.tags.opciones_saludables %}<span class="tag">🥗 Saludable</span>{% endif %}
+          {% if r.tags.tronas %}<a href="/ciudades/{{ page.ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
+          {% if r.tags.carta_infantil %}<a href="/ciudades/{{ page.ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
+          {% if r.tags.zona_juegos %}<a href="/ciudades/{{ page.ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
+          {% if r.tags.cambiador %}<a href="/ciudades/{{ page.ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
+          {% if r.tags.terraza %}<a href="/ciudades/{{ page.ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
+          {% if r.tags.mascotas %}<a href="/ciudades/{{ page.ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
+          {% if r.tags.accesible %}<a href="/ciudades/{{ page.ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
+          {% if r.tags.opciones_saludables %}<a href="/ciudades/{{ page.ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
         </div>
       </div>
     </article>

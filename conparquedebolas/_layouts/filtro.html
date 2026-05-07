@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="listing">
+  <header class="listing-header">
+    <p class="listing-header__breadcrumb"><a href="{{ page.breadcrumb_url }}">← {{ page.breadcrumb_label }}</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="listing-header__sub">{{ page.restaurantes | size }} restaurantes</p>
+  </header>
+
+  <div class="cards">
+    {% for r in page.restaurantes %}
+    <article class="card">
+      <a href="/restaurantes/{{ r.slug }}/" class="card__imagen-link">
+        <div class="card__imagen">
+          <div class="card__imagen-placeholder">🍽️</div>
+        </div>
+      </a>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__rating">★ {{ r.valoracion_kids }}</span>
+          {% if r.precio %}<span class="card__precio">{{ r.precio }}</span>{% endif %}
+        </div>
+        <h3 class="card__nombre">
+          <a href="/restaurantes/{{ r.slug }}/">{{ r.nombre }}</a>
+        </h3>
+        <p class="card__ciudad">{{ r.ciudad }}</p>
+        <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
+        <div class="card__tags">
+          {% if r.tags.tronas %}<a href="/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
+          {% if r.tags.carta_infantil %}<a href="/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
+          {% if r.tags.zona_juegos %}<a href="/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
+          {% if r.tags.cambiador %}<a href="/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
+          {% if r.tags.terraza %}<a href="/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
+          {% if r.tags.mascotas %}<a href="/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
+          {% if r.tags.accesible %}<a href="/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
+          {% if r.tags.opciones_saludables %}<a href="/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>

@@ -118,6 +118,27 @@
   white-space: nowrap;
 }
 
+a.tag {
+  text-decoration: none;
+  &:hover { background: #dceedd; text-decoration: none; }
+}
+
+.filtros-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0 0 2rem;
+
+  .tag { font-size: 0.85rem; padding: 0.35rem 0.75rem; }
+}
+
+.card__ciudad {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0 0 0.4rem;
+}
+
 // Vista detalle
 .detalle {
   max-width: 720px;

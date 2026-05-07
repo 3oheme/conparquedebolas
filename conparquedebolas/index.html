@@ -9,6 +9,17 @@ title: Restaurantes kids-friendly en Cádiz
     <p class="listing-header__sub">Los mejores sitios para comer con niños en la provincia de Cádiz.</p>
   </header>
 
+  <nav class="filtros-nav">
+    <a href="/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>
+    <a href="/con/carta-infantil/" class="tag">🧒 Carta infantil</a>
+    <a href="/con/tronas/" class="tag">🪑 Tronas</a>
+    <a href="/con/cambiador/" class="tag">🚻 Cambiador</a>
+    <a href="/con/terraza/" class="tag">🌿 Terraza</a>
+    <a href="/con/mascotas/" class="tag">🐶 Mascotas</a>
+    <a href="/con/accesible/" class="tag">♿ Accesible</a>
+    <a href="/con/opciones-saludables/" class="tag">🥗 Saludable</a>
+  </nav>
+
   {% assign ciudades = site.data.cadiz | map: "ciudad" | uniq %}
   {% for ciudad in ciudades %}
   <section class="ciudad">
@@ -32,14 +43,14 @@ title: Restaurantes kids-friendly en Cádiz
           </h3>
           <p class="card__kids">{{ r.por_que_kids_friendly }}</p>
           <div class="card__tags">
-            {% if r.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
-            {% if r.tags.carta_infantil %}<span class="tag">🧒 Carta infantil</span>{% endif %}
-            {% if r.tags.zona_juegos %}<span class="tag">🎮 Zona de juegos</span>{% endif %}
-            {% if r.tags.cambiador %}<span class="tag">🚻 Cambiador</span>{% endif %}
-            {% if r.tags.terraza %}<span class="tag">🌿 Terraza</span>{% endif %}
-            {% if r.tags.mascotas %}<span class="tag">🐶 Mascotas</span>{% endif %}
-            {% if r.tags.accesible %}<span class="tag">♿ Accesible</span>{% endif %}
-            {% if r.tags.opciones_saludables %}<span class="tag">🥗 Saludable</span>{% endif %}
+            {% if r.tags.tronas %}<a href="/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
+            {% if r.tags.carta_infantil %}<a href="/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
+            {% if r.tags.zona_juegos %}<a href="/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
+            {% if r.tags.cambiador %}<a href="/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
+            {% if r.tags.terraza %}<a href="/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
+            {% if r.tags.mascotas %}<a href="/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
+            {% if r.tags.accesible %}<a href="/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
+            {% if r.tags.opciones_saludables %}<a href="/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
           </div>
         </div>
       </article>

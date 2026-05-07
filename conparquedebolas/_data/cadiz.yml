@@ -31,7 +31,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Mar–Dom 13:00–16:30, 20:00–23:30"
 
 - nombre: "Mesón Los Nuevos Olivares"
   slug: "meson-los-nuevos-olivares"
@@ -57,7 +56,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Mar–Dom 13:00–16:30, 20:30–23:30"
 
 - nombre: "Cervecería Retiro"
   slug: "cerveceria-retiro"
@@ -82,7 +80,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€"
-  horario: "Lun–Dom 08:00–24:00"
 
 - nombre: "Badybu"
   slug: "badybu"
@@ -110,7 +107,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€"
-  horario: "Mar–Dom 17:00–21:30 (consultar para celebraciones)"
 
 - nombre: "Altos Ibéricos"
   slug: "altos-ibericos"
@@ -136,7 +132,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Lun–Dom 08:00–24:00"
 
 - nombre: "Muerde la Pasta - Luz Shopping"
   slug: "muerde-la-pasta-luz-shopping"
@@ -163,7 +158,6 @@
     accesible: true
     opciones_saludables: true
   precio: "€€"
-  horario: "Lun–Dom 13:00–16:30, 20:00–24:00"
 
 - nombre: "Hikari Sushi"
   slug: "hikari-sushi-jerez"
@@ -191,7 +185,6 @@
     accesible: true
     opciones_saludables: true
   precio: "€€"
-  horario: "Lun–Dom 13:00–16:30, 20:00–24:00"
 
 # ─────────────────────────────────────────────────────────────
 # EL PUERTO DE SANTA MARÍA
@@ -222,7 +215,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Lun–Dom 13:00–24:00"
 
 - nombre: "Pizzería Blanca Paloma"
   slug: "pizzeria-blanca-paloma"
@@ -250,7 +242,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Mié–Lun 13:00–16:30, 20:00–24:00"
 
 - nombre: "Little Italy Trattoria & Pizzería"
   slug: "little-italy-el-puerto"
@@ -278,7 +269,6 @@
     accesible: true
     opciones_saludables: true
   precio: "€€"
-  horario: "Lun–Jue 13:00–16:00, 20:00–24:00, Vie–Dom 13:00–18:00, 20:00–24:00"
 
 - nombre: "The Shamrock Bar & Eatery"
   slug: "the-shamrock"
@@ -305,7 +295,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Mié–Lun 12:00–24:00 (cerrado martes)"
 
 - nombre: "La Parrilla Bailey's"
   slug: "la-parrilla-baileys"
@@ -331,7 +320,6 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Lun–Dom 13:00–24:00"
 
 - nombre: "The Cabin Beer Garden"
   slug: "the-cabin"
@@ -358,4 +346,3 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
-  horario: "Mié–Lun 12:30–24:00 (cerrado martes)"

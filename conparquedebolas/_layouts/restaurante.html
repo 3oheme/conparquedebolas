@@ -58,21 +58,21 @@ layout: default
     <p class="detalle__descripcion">{{ page.descripcion_general }}</p>
     {% endif %}
 
+    {% assign ciudad_slug = page.ciudad | slugify: "latin" %}
     <div class="detalle__tags">
-      {% if page.tags.tronas %}<span class="tag">🪑 Tronas</span>{% endif %}
-      {% if page.tags.carta_infantil %}<span class="tag">🧒 Carta infantil</span>{% endif %}
-      {% if page.tags.zona_juegos %}<span class="tag">🎮 Zona de juegos</span>{% endif %}
-      {% if page.tags.cambiador %}<span class="tag">🚻 Cambiador</span>{% endif %}
-      {% if page.tags.terraza %}<span class="tag">🌿 Terraza</span>{% endif %}
-      {% if page.tags.mascotas %}<span class="tag">🐶 Mascotas</span>{% endif %}
-      {% if page.tags.accesible %}<span class="tag">♿ Accesible</span>{% endif %}
-      {% if page.tags.opciones_saludables %}<span class="tag">🥗 Saludable</span>{% endif %}
+      {% if page.tags.tronas %}<a href="/ciudades/{{ ciudad_slug }}/con/tronas/" class="tag">🪑 Tronas</a>{% endif %}
+      {% if page.tags.carta_infantil %}<a href="/ciudades/{{ ciudad_slug }}/con/carta-infantil/" class="tag">🧒 Carta infantil</a>{% endif %}
+      {% if page.tags.zona_juegos %}<a href="/ciudades/{{ ciudad_slug }}/con/zona-juegos/" class="tag">🎮 Zona de juegos</a>{% endif %}
+      {% if page.tags.cambiador %}<a href="/ciudades/{{ ciudad_slug }}/con/cambiador/" class="tag">🚻 Cambiador</a>{% endif %}
+      {% if page.tags.terraza %}<a href="/ciudades/{{ ciudad_slug }}/con/terraza/" class="tag">🌿 Terraza</a>{% endif %}
+      {% if page.tags.mascotas %}<a href="/ciudades/{{ ciudad_slug }}/con/mascotas/" class="tag">🐶 Mascotas</a>{% endif %}
+      {% if page.tags.accesible %}<a href="/ciudades/{{ ciudad_slug }}/con/accesible/" class="tag">♿ Accesible</a>{% endif %}
+      {% if page.tags.opciones_saludables %}<a href="/ciudades/{{ ciudad_slug }}/con/opciones-saludables/" class="tag">🥗 Saludable</a>{% endif %}
     </div>
 
     <div class="detalle__info">
       <p>📍 {{ page.direccion }}</p>
-      {% if page.horario %}<p>🕐 {{ page.horario }}</p>{% endif %}
-      {% if page.web %}
+{% if page.web %}
       <p>🌐 <a href="{{ page.web }}" target="_blank" rel="noopener">Web</a></p>
       {% endif %}
       {% if page.instagram %}
