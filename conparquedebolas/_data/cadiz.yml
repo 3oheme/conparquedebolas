@@ -206,7 +206,7 @@
   descripcion_general_en: "Organic, vegetarian-friendly restaurant using produce from its own garden. Bread and pastries with no added sugar. Adult menu around €15-17."
   direccion: "Ctra. de Cortes (A-2003), Desviación El Torno km 2 (CA-3111), 11593 Jerez de la Frontera"
   valoracion_kids: 4.5
-  imagen: "/assets/img/restaurantes/rancho-cortesano-jerez.jpg"
+  imagen: "/assets/img/restaurantes/rancho-cortesano.jpg"
   web: "https://ranchocortesano.net"
   ultima_verificacion: "2026-05-07"
   lat: 36.5950
@@ -237,7 +237,7 @@
   descripcion_general_en: "Traditional Andalusian cuisine for groups in a rural setting with gardens, parking and large capacity. Ideal for celebrations."
   direccion: "Ctra. Trebujena, km 2,5, Cañada del Moro, 11407 Jerez de la Frontera"
   valoracion_kids: 4.4
-  imagen: "/assets/img/restaurantes/bodegon-blanca-paloma-jerez.jpg"
+  imagen: "/assets/img/restaurantes/rociero-blanca-paloma.jpg"
   web: "https://www.restauranteblancapaloma.com"
   ultima_verificacion: "2026-05-07"
   lat: 36.7150
@@ -268,7 +268,7 @@
   descripcion_general_en: "American-style burger joint with hand-ground select meats (Galician, retinto, black angus), fried chicken and salads."
   direccion: "Av. de la Cruz Roja, 15, 11407 Jerez de la Frontera"
   valoracion_kids: 4.2
-  imagen: "/assets/img/restaurantes/flanagan-jerez.jpg"
+  imagen: "/assets/img/restaurantes/flanagan.jpg"
   web: "https://restauranteflanagan.com"
   instagram: "flanaganfgb"
   ultima_verificacion: "2026-05-07"
