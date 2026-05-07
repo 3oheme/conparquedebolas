@@ -661,39 +661,36 @@ a.tag {
     text-wrap: pretty;
   }
 
-  &__info {
+  &__info-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    border: 1px solid rgba($tinta-soft, 0.12);
     margin-bottom: 2.75rem;
-    border-top: 1px solid rgba($tinta-soft, 0.15);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem 2rem;
   }
 
-  &__panel-row {
-    padding: 0.875rem 0;
-    border-bottom: 1px solid rgba($tinta-soft, 0.12);
-
-    &:first-child { padding-top: 0; }
-    &:last-child { border-bottom: none; }
-  }
-
-  &__panel-label {
+  &__info-label {
     font-family: $font-mono;
     font-size: 0.62rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $tinta-soft;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
 
-  &__panel-value {
-    font-size: 0.9rem;
-    color: $tinta;
+  &__info-value {
+    font-size: 1rem;
     font-weight: 500;
+    color: $tinta;
     letter-spacing: -0.01em;
 
     a {
       color: $tinta;
       text-decoration: underline;
       text-underline-offset: 3px;
-      font-weight: 500;
       &:hover { color: $terracota; text-decoration: none; }
     }
   }

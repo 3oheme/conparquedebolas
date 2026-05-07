@@ -98,23 +98,23 @@ layout: default
             {% endif %}
           </div>
 
-          <div class="detalle__info">
-            <div class="detalle__panel-row">
-              <div class="detalle__panel-label">Dirección</div>
-              <div class="detalle__panel-value">{{ page.direccion }}</div>
+          <div class="detalle__info-card">
+            <div class="detalle__info-item">
+              <div class="detalle__info-label">Dirección</div>
+              <div class="detalle__info-value">{{ page.direccion }}</div>
             </div>
             {% if page.web %}
-            <div class="detalle__panel-row">
-              <div class="detalle__panel-label">Web</div>
-              <div class="detalle__panel-value">
+            <div class="detalle__info-item">
+              <div class="detalle__info-label">Web</div>
+              <div class="detalle__info-value">
                 <a href="{{ page.web }}" target="_blank" rel="noopener">{{ t.ver_web }}</a>
               </div>
             </div>
             {% endif %}
             {% if page.instagram %}
-            <div class="detalle__panel-row">
-              <div class="detalle__panel-label">Instagram</div>
-              <div class="detalle__panel-value">
+            <div class="detalle__info-item">
+              <div class="detalle__info-label">Instagram</div>
+              <div class="detalle__info-value">
                 <a href="https://instagram.com/{{ page.instagram }}" target="_blank" rel="noopener">@{{ page.instagram }}</a>
               </div>
             </div>
