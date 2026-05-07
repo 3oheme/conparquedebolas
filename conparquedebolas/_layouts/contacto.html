@@ -12,10 +12,12 @@ layout: default
     <p class="listing-header__sub">{{ t.contacto_intro }}</p>
   </header>
 
-  <form class="contacto-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="{{ lang_prefix }}/gracias/">
-    <input type="hidden" name="form-name" value="contacto">
+  <form class="contacto-form" method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="4de07266-06f2-4160-8d2e-f19bfbecff2d">
+    <input type="hidden" name="subject" value="Nuevo restaurante — Con Parque de Bolas">
+    <input type="hidden" name="redirect" value="{{ site.url }}{{ lang_prefix }}/gracias/">
     <input type="hidden" name="idioma" value="{{ _lang }}">
-    <p class="contacto-form__honeypot"><label>No rellenar: <input name="bot-field"></label></p>
+    <input type="checkbox" name="botcheck" style="display:none">
 
     <div class="form-field">
       <label for="nombre_restaurante">{{ t.campo_restaurante }} *</label>
