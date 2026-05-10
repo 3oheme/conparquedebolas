@@ -14,7 +14,7 @@ Web estática que lista restaurantes kids-friendly en la provincia de Cádiz (co
 
 ```
 conparquedebolas/          ← raíz del repo git
-  netlify.toml             ← config de build para Netlify
+  netlify.toml             ← ignorar, hosting migrado a Cloudflare Pages
   conparquedebolas/        ← sitio Jekyll
     _data/
       cadiz.yml            ← lista plana de restaurantes de Cádiz
@@ -24,19 +24,20 @@ conparquedebolas/          ← raíz del repo git
       restaurante.html     ← vista detalle de un restaurante
       ciudad.html          ← vista listado de una ciudad
       filtro.html          ← vista listado filtrada por tag
-      contacto.html        ← formulario de contacto (Netlify Forms)
+      contacto.html        ← formulario de contacto (Web3Forms)
       gracias.html         ← página de confirmación post-envío
     _includes/
-      header.html          ← cabecera con selector de idioma
-      footer.html          ← pie con enlace de contacto y email
-      head.html            ← meta tags + hreflang
+      header.html          ← cabecera con logo tipográfico y selector de idioma
+      footer.html          ← pie oscuro con CTA de contacto
+      head.html            ← meta tags + hreflang + Google Fonts
     _plugins/
       restaurantes_generator.rb  ← genera todas las páginas dinámicas a partir del YAML
     _sass/
-      parquedebolas.scss   ← todos los estilos del proyecto
+      parquedebolas.scss   ← todos los estilos del proyecto (sistema de marca completo)
     assets/
-      main.scss            ← punto de entrada SCSS (importa minima + parquedebolas)
+      main.scss            ← punto de entrada SCSS (tokens → minima → parquedebolas)
       img/restaurantes/    ← imágenes de portada (ratio 16:9, JPG o WebP)
+    design/                ← ficheros JSX de referencia visual (Claude Design, no se sirven)
     index.html             ← home ES
     contacto.html          ← página de contacto ES
     gracias.html           ← página de gracias ES
@@ -79,7 +80,7 @@ conparquedebolas/          ← raíz del repo git
   imagen: "/assets/img/restaurantes/slug.jpg"   # opcional
   web: "https://www.ejemplo.com"               # opcional
   instagram: "handle_sin_arroba"               # opcional, solo el handle
-  lat: 36.5268                                 # necesario para mostrar el mapa en la ficha
+  lat: 36.5268                                 # necesario para el mapa y el enlace de dirección
   lng: -6.2989
   ultima_verificacion: "2025-04-30"
   tags:
@@ -112,6 +113,49 @@ conparquedebolas/          ← raíz del repo git
 
 ---
 
+## Sistema de marca y diseño
+
+El diseño es editorial y mediterráneo. Ficheros de referencia en `design/` (JSX generados con Claude Design, no se sirven en producción).
+
+### Tipografías (Google Fonts)
+
+| Variable SCSS | Fuente | Uso |
+|---|---|---|
+| `$font-serif` | Fraunces | Logo, titulares, nombres de restaurante, descripciones |
+| `$font-sans` | Inter Tight | Cuerpo, botones, navegación |
+| `$font-mono` | JetBrains Mono | Labels, eyebrows, contadores, verificación |
+
+### Paleta
+
+| Variable SCSS | Valor | Uso |
+|---|---|---|
+| `$terracota` | `#C2452D` | Acento principal, CTAs, punto editorial |
+| `$terracota-dark` | `#8E2F1E` | Hover de terracota |
+| `$terracota-soft` | `#E8A99B` | Texto italiano en footer |
+| `$crema` | `#F5EFE4` | Fondo global |
+| `$crema-dark` | `#EDE4D3` | Fondos secundarios, placeholders |
+| `$tinta` | `#1F1A14` | Color de texto principal |
+| `$tinta-soft` | `#5C5247` | Texto secundario, labels, iconos |
+| `$ambar` | `#D89A2C` | Rating (estrella) |
+
+### Anchura máxima
+
+`$content-width: 1280px` — sobreescribe el default de Minima (800px) en `assets/main.scss`.
+
+### Estructura de la ficha detalle (`restaurante.html`)
+
+1. Imagen a sangre completa
+2. Breadcrumb mono + eyebrow de ciudad
+3. Nombre en serif grande con punto terracota
+4. Fila de meta: rating (ambar) · precio (serif itálica)
+5. Tags clicables que filtran por esa característica en la ciudad
+6. Sección "El sitio." — `por_que_kids_friendly` + `descripcion_general`
+7. Card de info: dirección (enlaza a Google Maps), web, instagram — grid horizontal, label mono + valor sans
+8. Mapa Google Maps embebido (inline, no flotante)
+9. Fecha de verificación en mono
+
+---
+
 ## WHY — Propósito
 
 Ayudar a familias con niños a encontrar restaurantes donde comer sin estrés. El criterio principal no es la calidad gastronómica sino la experiencia para las familias: tronas, espacio, paciencia del personal, zonas de juego.
@@ -140,7 +184,7 @@ El site queda disponible en `http://localhost:4000/`.
 2. Añadir una entrada siguiendo la estructura YAML de arriba
 3. El `slug` debe ser único y en minúsculas sin tildes (ej. `el-faro-de-cadiz`)
 4. Si la ciudad es nueva, escribirla exactamente igual que aparecerá en los títulos
-5. Obtener `lat` y `lng` desde Google Maps (click derecho sobre el punto → copiar coordenadas) — sin ellos el mapa no se muestra en la ficha
+5. Obtener `lat` y `lng` desde Google Maps (click derecho sobre el punto → copiar coordenadas) — sin ellos no aparece ni el mapa ni el enlace de dirección
 6. `web` e `instagram` son opcionales. En `instagram` se escribe solo el handle, sin `https://instagram.com/`
 7. Añadir imagen en `assets/img/restaurantes/[slug].jpg` (ratio 16:9 recomendado)
 8. Si no se rellena `por_que_kids_friendly_en`, el restaurante no tendrá página EN
@@ -155,7 +199,7 @@ El site queda disponible en `http://localhost:4000/`.
 El repositorio tiene dos ramas:
 
 - **`dev`** — desarrollo diario. Commits libres, sin coste de build.
-- **`main`** — producción. Cada push dispara un build en Netlify.
+- **`main`** — producción. Cada push dispara un build en Cloudflare Pages.
 
 Flujo normal:
 
@@ -189,9 +233,10 @@ git checkout dev  # volver a dev para seguir trabajando
 | Filtro por tags (`/con/[tag]/` y `/ciudades/[slug]/con/[tag]/`) | MVP ✅ |
 | Imágenes en tarjetas y ficha detalle | MVP ✅ |
 | i18n ES/EN completo | MVP ✅ |
-| Formulario de contacto (Netlify Forms, ES + EN) | MVP ✅ |
+| Formulario de contacto (Web3Forms, ES + EN) | MVP ✅ |
 | Email `hola@conparquedebolas.com` (Cloudflare routing) | MVP ✅ |
 | Ordenación por `valoracion_kids` | MVP ✅ |
+| Rediseño editorial completo (Fraunces + Inter Tight + sistema de marca) | MVP ✅ |
 | Buscador por nombre | v2 |
 | Alta de restaurantes vía GitHub Issues | v2 |
 | Más ciudades de Cádiz (Cádiz capital, Conil, Vejer, Tarifa, Sanlúcar) | v2 |
