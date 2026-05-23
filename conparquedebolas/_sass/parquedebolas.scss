@@ -695,6 +695,51 @@ a.tag {
     }
   }
 
+  &__galeria {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 2.75rem;
+    border-radius: 16px;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  &__galeria-item {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.2s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba($tinta, 0);
+      transition: background 0.2s;
+      border-radius: 12px;
+    }
+
+    &:hover {
+      img { transform: scale(1.03); }
+      &::after { background: rgba($tinta, 0.12); }
+    }
+  }
+
   &__mapa {
     margin-top: 2.75rem;
     border-radius: 16px;
@@ -734,5 +779,77 @@ a.tag {
     &__parque-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+}
+
+// ─── Lightbox ─────────────────────────────────────────────────
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba($tinta, 0.92);
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+
+  &.is-open { display: flex; }
+
+  &__img {
+    max-width: 90vw;
+    max-height: 86vh;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+
+  &__close {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba($crema, 0.12);
+    color: $crema;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s;
+    &:hover { background: rgba($crema, 0.22); }
+  }
+
+  &__prev,
+  &__next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba($crema, 0.12);
+    color: $crema;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s;
+    &:hover { background: rgba($crema, 0.22); }
+  }
+
+  &__prev { left: 20px; }
+  &__next { right: 20px; }
+
+  &__counter {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $font-mono;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: rgba($crema, 0.5);
   }
 }
