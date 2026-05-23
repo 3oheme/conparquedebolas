@@ -475,3 +475,38 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
+
+- nombre: "Salicornia Chill Out Bar"
+  slug: "salicornia-toruños"
+  ciudad: "El Puerto de Santa María"
+  por_que_kids_friendly: >
+    Bar-terraza dentro del Parque Metropolitano Los Toruños con un parque
+    de bolas interior de dos alturas (túneles, redes, piscina de bolas)
+    por 3 € de entrada. Terraza enorme con pérgola y sombra, ideal para
+    comer tranquilos mientras los peques juegan a la vuelta del paseo
+    por el pinar o la playa.
+  por_que_kids_friendly_en: >
+    Bar-terrace inside the Los Toruños Metropolitan Park with an indoor
+    two-level ball pit (tunnels, nets, ball pool) for a €3 entrance fee.
+    Huge shaded pergola terrace, perfect for a relaxed meal while the
+    kids play after a walk through the pine forest or the beach.
+  descripcion_general: "Chill out bar y terraza dentro del Parque de los Toruños. Cervezas, raciones y comida informal en un entorno natural junto al pinar y la playa."
+  descripcion_general_en: "Chill out bar and terrace inside Los Toruños Park. Beers, sharing plates and casual food in a natural setting next to the pine forest and the beach."
+  direccion: "Parque Metropolitano Los Toruños y Pinar de la Algaida, 11500 El Puerto de Santa María"
+  valoracion_kids: 4.3
+  imagen: "/assets/img/restaurantes/salicornia-toruños.jpg"
+  instagram: "salicorniaelpuerto"
+  ultima_verificacion: "2026-05-23"
+  lat: 36.5786
+  lng: -6.2150
+  tags:
+    tronas: true
+    carta_infantil: false
+    zona_juegos: true
+    cambiador: false
+    terraza: true
+    mascotas: true
+    accesible: true
+    opciones_saludables: false
+  precio: "€€"
+
