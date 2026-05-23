@@ -509,4 +509,11 @@
     accesible: true
     opciones_saludables: false
   precio: "€€"
+  imagenes:
+    - "/assets/img/restaurantes/salicornia-1.jpg"
+    - "/assets/img/restaurantes/salicornia-2.jpg"
+    - "/assets/img/restaurantes/salicornia-3.jpg"
+    - "/assets/img/restaurantes/salicornia-4.jpg"
+    - "/assets/img/restaurantes/salicornia-5.jpg"
+    - "/assets/img/restaurantes/salicornia-6.jpg"
 
