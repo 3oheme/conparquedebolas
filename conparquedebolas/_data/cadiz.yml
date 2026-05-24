@@ -285,6 +285,42 @@
     opciones_saludables: true
   precio: "€€"
 
+- nombre: "Jerez Fun Center"
+  slug: "jerez-fun-center"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Centro de ocio familiar de 5.000 m² con Park Jump (camas elásticas),
+    Arena Laser Combat, fútbol indoor y piscina en jardín privado. El
+    Sport Bar sirve desayunos, almuerzos, meriendas y cenas —niños y
+    adultos comen mientras el resto de la familia sigue jugando. Ideal
+    para cumpleaños y celebraciones con paquetes propios.
+  por_que_kids_friendly_en: >
+    5,000 m² family leisure centre with Park Jump (trampolines),
+    Arena Laser Combat, indoor football and a private garden with pool.
+    The Sport Bar serves breakfasts, lunches, snacks and dinners — kids
+    and adults eat while the rest of the family keeps playing. Great for
+    birthday parties and celebrations with dedicated packages.
+  descripcion_general: "Centro de ocio Sport & Food de Grupo Senda. Sport Bar con carta de hamburguesas, alitas, opciones veganas, bebidas y cafetería. Pet friendly y accesible."
+  descripcion_general_en: "Sport & Food leisure centre by Grupo Senda. Sport Bar with burgers, chicken wings, vegan options, drinks and café. Pet friendly and fully accessible."
+  direccion: "Av. Tío Pepe, 12, 11407 Jerez de la Frontera"
+  valoracion_kids: 4.5
+  imagen: "/assets/img/restaurantes/jerez-fun-center.jpg"
+  web: "https://www.grupo-senda.com/jerez-fun-center/"
+  instagram: "jerez_fun_center"
+  ultima_verificacion: "2026-05-24"
+  lat: 36.70691
+  lng: -6.11536
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: true
+    terraza: true
+    mascotas: true
+    accesible: true
+    opciones_saludables: true
+  precio: "€€"
+
 - nombre: "Duendeburguer"
   slug: "duendeburguer-jerez"
   ciudad: "Jerez de la Frontera"
