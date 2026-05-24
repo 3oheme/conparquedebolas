@@ -278,6 +278,21 @@ a:hover { color: $terracota; }
     margin: 0;
   }
 
+  &__galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+
+    img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+      object-fit: cover;
+      max-height: 480px;
+    }
+  }
+
   @media (max-width: 800px) {
     &__bloque {
       &--foto-derecha,
@@ -287,6 +302,8 @@ a:hover { color: $terracota; }
       }
       &--foto-izquierda .nosotros__foto { order: -1; }
     }
+
+    &__galeria { grid-template-columns: 1fr; }
   }
 }
 
