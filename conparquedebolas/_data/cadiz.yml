@@ -221,6 +221,12 @@
     accesible: true
     opciones_saludables: true
   precio: "€€"
+  imagenes:
+    - "/assets/img/restaurantes/rancho-cortesano-1.jpg"
+    - "/assets/img/restaurantes/rancho-cortesano-2.jpg"
+    - "/assets/img/restaurantes/rancho-cortesano-3.jpg"
+    - "/assets/img/restaurantes/rancho-cortesano-4.jpg"
+    - "/assets/img/restaurantes/rancho-cortesano-5.jpg"
 
 - nombre: "Bodegón de la Blanca Paloma"
   slug: "bodegon-blanca-paloma"
