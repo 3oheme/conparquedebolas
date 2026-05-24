@@ -146,7 +146,8 @@ a:hover { color: $terracota; }
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 1.25rem 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 
   &__title {
     font-family: $font-serif;
@@ -661,24 +662,51 @@ a.tag {
   }
 }
 
-.filtros-nav {
+.ciudades-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
+  gap: 0.75rem;
   margin: 0 0 2.5rem;
 
-  .tag {
-    font-size: 0.82rem;
-    padding: 0.4rem 0.9rem;
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 100px;
     background: #fff;
-    border-color: rgba($tinta-soft, 0.2);
+    border: 1px solid rgba($tinta-soft, 0.2);
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: $tinta;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+
     &:hover {
       background: $terracota;
       border-color: $terracota;
       color: #fff;
+      text-decoration: none;
+
+      .ciudades-nav__count {
+        background: rgba(#fff, 0.25);
+        color: #fff;
+      }
     }
+  }
+
+  &__count {
+    font-family: $font-mono;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: $tinta-soft;
+    background: $crema-dark;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100px;
+    letter-spacing: 0;
+    transition: background 0.15s, color 0.15s;
   }
 }
 

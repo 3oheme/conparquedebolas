@@ -39,11 +39,37 @@ layout: default
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{% if _lang == 'en' %}Home{% else %}Inicio{% endif %}",
+      "item": "{{ site.url }}{{ lang_prefix }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.ciudad | escape }}",
+      "item": "{{ site.url }}{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.nombre | escape }}"
+    }
+  ]
+}
+</script>
+
 <article class="detalle">
 
   <div class="detalle__imagen-wrap">
     {% if page.imagen %}
-      <img src="{{ page.imagen }}" alt="{{ page.nombre }}" loading="lazy">
+      <img src="{{ page.imagen }}" alt="{{ page.nombre }} · restaurante kids-friendly en {{ page.ciudad }}" loading="eager">
     {% else %}
       <div class="detalle__imagen-empty">🍽️</div>
     {% endif %}
