@@ -56,6 +56,22 @@ a:hover { color: $terracota; }
   &:hover { color: $tinta; text-decoration: none; }
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-nav__link {
+  font-family: $font-sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $tinta-soft;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  &:hover { color: $tinta; text-decoration: none; }
+}
+
 .lang-switch {
   font-family: $font-mono;
   font-size: 0.7rem;

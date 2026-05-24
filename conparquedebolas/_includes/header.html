@@ -5,10 +5,13 @@
     <a class="site-logo" rel="author" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">
       <span class="site-logo__con">con</span> parque de bolas<span class="site-logo__dot">.</span>
     </a>
-    {%- if page.lang == "en" and page.alternate_url -%}
-      <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
-    {%- elsif page.has_en and page.alternate_url -%}
-      <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
-    {%- endif -%}
+    <div class="header-nav">
+      <a href="{% if _lang == 'en' %}/en/about/{% else %}/nosotros/{% endif %}" class="header-nav__link">{% if _lang == 'en' %}About{% else %}Nosotros{% endif %}</a>
+      {%- if page.lang == "en" and page.alternate_url -%}
+        <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
+      {%- elsif page.has_en and page.alternate_url -%}
+        <a href="{{ page.alternate_url }}" class="lang-switch">{{ t.switch_lang }}</a>
+      {%- endif -%}
+    </div>
   </div>
 </header>
