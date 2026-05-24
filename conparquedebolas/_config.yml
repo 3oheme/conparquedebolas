@@ -27,6 +27,7 @@ baseurl: ""
 url: "https://conparquedebolas.com"
 lang: es
 header_pages: []
+image: "/assets/og-default.jpg"
 
 # Build settings
 theme: minima

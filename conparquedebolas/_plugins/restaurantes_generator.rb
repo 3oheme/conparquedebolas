@@ -35,6 +35,7 @@ module Jekyll
       read_yaml(File.join(base, "_layouts"), "restaurante.html")
       self.data.merge!(data)
       self.data["lang"] = lang
+      self.data["image"] = data["imagen"] if data["imagen"]
       if lang == "en"
         self.data["title"]         = data["nombre"]
         self.data["description"]   = data["por_que_kids_friendly_en"]
