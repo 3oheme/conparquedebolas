@@ -251,7 +251,7 @@
     mascotas: true
     accesible: true
     opciones_saludables: false
-  precio: "€€"
+  precio: "€"
 
 - nombre: "Flanagan"
   slug: "flanagan-jerez"
@@ -319,7 +319,7 @@
     mascotas: true
     accesible: true
     opciones_saludables: true
-  precio: "€€"
+  precio: "€"
 
 - nombre: "Duendeburguer"
   slug: "duendeburguer-jerez"
@@ -355,7 +355,7 @@
     mascotas: false
     accesible: true
     opciones_saludables: false
-  precio: "€€"
+  precio: "€"
 
 # ─────────────────────────────────────────────────────────────
 # EL PUERTO DE SANTA MARÍA
