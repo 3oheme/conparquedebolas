@@ -19,6 +19,7 @@
   </div>
   <div class="wrapper footer-meta">
     <span class="footer-meta__title">con parque de bolas.</span>
+    <a href="{% if _lang == 'en' %}/en/about/{% else %}/nosotros/{% endif %}" class="footer-meta__email">{% if _lang == 'en' %}About us{% else %}Nosotros{% endif %}</a>
     <a href="mailto:{{ site.email }}" class="footer-meta__email">{{ site.email }}</a>
   </div>
 </footer>
