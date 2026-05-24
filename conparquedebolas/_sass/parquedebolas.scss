@@ -189,13 +189,18 @@ a:hover { color: $terracota; }
   &__dot { color: $terracota; }
 
   &__bloque {
-    display: grid;
-    gap: 3.5rem;
+    overflow: hidden; // clearfix for floated image
     margin-bottom: 3.5rem;
-    align-items: center;
 
-    &--foto-derecha  { grid-template-columns: 1fr 400px; }
-    &--foto-izquierda { grid-template-columns: 400px 1fr; }
+    &--foto-derecha .nosotros__foto {
+      float: right;
+      margin: 0 0 1.5rem 2.5rem;
+    }
+
+    &--foto-izquierda .nosotros__foto {
+      float: left;
+      margin: 0 2.5rem 1.5rem 0;
+    }
   }
 
   &__texto {
@@ -213,12 +218,14 @@ a:hover { color: $terracota; }
   }
 
   &__foto {
+    width: 320px;
+    max-width: 100%;
+
     img {
       width: 100%;
       border-radius: 18px;
       display: block;
       object-fit: cover;
-      max-height: 480px;
     }
   }
 
@@ -293,14 +300,14 @@ a:hover { color: $terracota; }
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     &__bloque {
-      &--foto-derecha,
-      &--foto-izquierda {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+      &--foto-derecha .nosotros__foto,
+      &--foto-izquierda .nosotros__foto {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem;
       }
-      &--foto-izquierda .nosotros__foto { order: -1; }
     }
 
     &__galeria { grid-template-columns: 1fr; }
