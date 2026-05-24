@@ -48,7 +48,7 @@
   descripcion_general: "Cervecería de tapas y raciones con menú variado y precio asequible."
   descripcion_general_en: "Tapas and sharing-plates bar with a varied menu and affordable prices."
   direccion: "Av. de Europa, 30, 11405 Jerez de la Frontera"
-  valoracion_kids: 4.3
+  valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/el-retiro-jerez.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.7035
@@ -78,7 +78,7 @@
   descripcion_general: "Centro de ocio infantil con cafetería y sala de eventos. Ideal para meriendas y celebraciones."
   descripcion_general_en: "Children's leisure centre with café and events room. Ideal for afternoon snacks and celebrations."
   direccion: "C. San Juan Bautista de la Salle, 11407 Jerez de la Frontera"
-  valoracion_kids: 4.6
+  valoracion_kids: 4.1
   imagen: "/assets/img/restaurantes/badybu-jerez.jpg"
   web: "https://www.badybu.com"
   instagram: "badybu_eventos"
@@ -110,7 +110,7 @@
   descripcion_general: "Tabanco-mesón especializado en ibéricos, montaditos, tostas y guisos tradicionales jerezanos."
   descripcion_general_en: "Tavern specialising in Iberian cured meats, small sandwiches, toasts and traditional Jerez stews."
   direccion: "Av. Voltaire, Edif. Albatros, 6, 11405 Jerez de la Frontera"
-  valoracion_kids: 4.0
+  valoracion_kids: 3.2
   imagen: "/assets/img/restaurantes/altos-ibericos-jerez.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.7015
@@ -140,7 +140,7 @@
   descripcion_general: "Buffet italiano de pastas, pizzas, ensaladas y postres con más de 150 recetas en rotación."
   descripcion_general_en: "Italian buffet of pasta, pizza, salads and desserts with more than 150 rotating recipes."
   direccion: "Ronda Aurora Boreal, s/n, CC Luz Shopping, 11408 Jerez de la Frontera"
-  valoracion_kids: 4.4
+  valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/muerde-la-pasta-jerez.jpg"
   web: "https://muerdelapasta.com/restaurantes-italianos-cerca/centro-comercial-luz-shopping/"
   ultima_verificacion: "2026-05-06"
@@ -171,7 +171,7 @@
   descripcion_general: "El mayor buffet japonés/asiático a la carta de Jerez. Más de 200 platos: sushi, plancha, wok, mariscos y postres."
   descripcion_general_en: "Jerez's largest Japanese/Asian à la carte buffet. Over 200 dishes: sushi, griddle, wok, seafood and desserts."
   direccion: "Av. de Europa, 13B, 11405 Jerez de la Frontera"
-  valoracion_kids: 4.2
+  valoracion_kids: 4.8
   imagen: "/assets/img/restaurantes/hikari-jerez.jpg"
   web: "https://www.restaurantehikari.com"
   instagram: "hikari.sushi.jerez"
@@ -205,7 +205,7 @@
   descripcion_general: "Restaurante ecológico y vegetariano con productos del propio huerto. Pan y dulces sin azúcar añadido. Menú adulto en torno a 15-17 €."
   descripcion_general_en: "Organic, vegetarian-friendly restaurant using produce from its own garden. Bread and pastries with no added sugar. Adult menu around €15-17."
   direccion: "Ctra. de Cortes (A-2003), Desviación El Torno km 2 (CA-3111), 11593 Jerez de la Frontera"
-  valoracion_kids: 4.5
+  valoracion_kids: 4.9
   imagen: "/assets/img/restaurantes/rancho-cortesano.jpg"
   web: "https://ranchocortesano.net"
   ultima_verificacion: "2026-05-07"
@@ -220,7 +220,7 @@
     mascotas: true
     accesible: true
     opciones_saludables: true
-  precio: "€"
+  precio: "€€"
 
 - nombre: "Bodegón de la Blanca Paloma"
   slug: "bodegon-blanca-paloma"
@@ -236,7 +236,7 @@
   descripcion_general: "Cocina tradicional andaluza para grupos en finca rural con jardines, parking y aforo grande. Ideal para celebraciones."
   descripcion_general_en: "Traditional Andalusian cuisine for groups in a rural setting with gardens, parking and large capacity. Ideal for celebrations."
   direccion: "Ctra. Trebujena, km 2,5, Cañada del Moro, 11407 Jerez de la Frontera"
-  valoracion_kids: 4.4
+  valoracion_kids: 4.6
   imagen: "/assets/img/restaurantes/rociero-blanca-paloma.jpg"
   web: "https://www.restauranteblancapaloma.com"
   ultima_verificacion: "2026-05-07"
@@ -303,7 +303,7 @@
   descripcion_general: "Centro de ocio Sport & Food de Grupo Senda. Sport Bar con carta de hamburguesas, alitas, opciones veganas, bebidas y cafetería. Pet friendly y accesible."
   descripcion_general_en: "Sport & Food leisure centre by Grupo Senda. Sport Bar with burgers, chicken wings, vegan options, drinks and café. Pet friendly and fully accessible."
   direccion: "Av. Tío Pepe, 12, 11407 Jerez de la Frontera"
-  valoracion_kids: 4.5
+  valoracion_kids: 4.1
   imagen: "/assets/img/restaurantes/jerez-fun-center.jpg"
   web: "https://www.grupo-senda.com/jerez-fun-center/"
   instagram: "jerez_fun_center"
@@ -339,7 +339,7 @@
   descripcion_general: "Hamburguesería con parque de bolas integrado en el Centro de Ocio El Duende. Cenas familiares de jueves a sábado a partir de las 20:00, con parque incluido en el precio."
   descripcion_general_en: "Burger restaurant with integrated ball pit inside the El Duende Leisure Centre. Family dinners Thursday to Saturday from 20:00, with the ball pit included in the price."
   direccion: "C. Joyería, 13, 11408 Jerez de la Frontera"
-  valoracion_kids: 4.4
+  valoracion_kids: 3.6
   imagen: "/assets/img/restaurantes/duendeburguer-jerez.jpg"
   web: "https://www.duendeweb.org"
   instagram: "elduendeanimacion"
@@ -375,7 +375,7 @@
   descripcion_general: "Cocina americana clásica: hamburguesas, costillas, fajitas, ensaladas y postres."
   descripcion_general_en: "Classic American food: burgers, ribs, fajitas, salads and desserts."
   direccion: "C/ del Vivero, 2, CC Vistahermosa, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.0
+  valoracion_kids: 3.7
   imagen: "/assets/img/restaurantes/fosters-vistahermosa.jpg"
   web: "https://fostershollywood.es/restaurantes/cadiz/el-puerto-de-santa-maria/fh-vistahermosa"
   ultima_verificacion: "2026-05-06"
@@ -438,7 +438,7 @@
   descripcion_general: "Trattoria-pizzería italiana con carta amplia, ingredientes importados y menú infantil."
   descripcion_general_en: "Italian trattoria-pizzeria with a wide menu, imported ingredients and a kids' menu."
   direccion: "Carretera de Sanlúcar, 4, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.7
+  valoracion_kids: 4.4
   imagen: "/assets/img/restaurantes/little-italy-el-puerto.jpg"
   web: "https://pizzerialittleitaly.es"
   instagram: "little_italy_restaurante"
@@ -470,7 +470,7 @@
   descripcion_general: "Pub irlandés con cocina internacional: desayunos, brunch, hamburguesas, currys y carnes."
   descripcion_general_en: "Irish pub with international food: breakfasts, brunch, burgers, curries and meats."
   direccion: "Carretera CA-603 Puerto-Rota, km 5.5, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.2
+  valoracion_kids: 4.9
   imagen: "/assets/img/restaurantes/shamrock.jpg"
   web: "https://www.shamrockbarandeatery.com"
   ultima_verificacion: "2026-05-06"
@@ -501,7 +501,7 @@
   descripcion_general: "Brasería argentina-andaluza: carnes a la parrilla, entrantes para compartir y postres caseros."
   descripcion_general_en: "Argentine-Andalusian grill: grilled meats, sharing starters and homemade desserts."
   direccion: "Av. Fuentebravia, km 4, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.1
+  valoracion_kids: 4.4
   imagen: "/assets/img/restaurantes/parrilla-baileys.jpg"
   ultima_verificacion: "2026-05-06"
   lat: 36.6080
@@ -531,7 +531,7 @@
   descripcion_general: "Beer garden de inspiración americana con hamburguesas, parrilla y más de 40 cervezas artesanales."
   descripcion_general_en: "American-inspired beer garden with burgers, grilled food and over 40 craft beers."
   direccion: "Calle de la Hijuela del Tío Gilito, s/n, 11500 El Puerto de Santa María"
-  valoracion_kids: 4.8
+  valoracion_kids: 4.6
   imagen: "/assets/img/restaurantes/the-cabin-beer-garden.jpg"
   instagram: "thecabinbeer"
   ultima_verificacion: "2026-05-06"

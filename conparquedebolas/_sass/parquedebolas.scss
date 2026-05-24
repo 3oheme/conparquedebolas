@@ -28,6 +28,9 @@ a:hover { color: $terracota; }
 
 .site-nav { display: none; }
 
+// Remove Minima's default padding so each layout controls its own spacing
+.page-content { padding: 0; }
+
 // ─── Header ───────────────────────────────────────────────────
 .site-header {
   background: $crema;
