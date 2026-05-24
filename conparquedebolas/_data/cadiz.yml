@@ -285,6 +285,42 @@
     opciones_saludables: true
   precio: "€€"
 
+- nombre: "Duendeburguer"
+  slug: "duendeburguer-jerez"
+  ciudad: "Jerez de la Frontera"
+  por_que_kids_friendly: >
+    Hamburguesería dentro del Centro de Ocio El Duende: parque de bolas
+    GRATIS con la cena (jueves, viernes y sábado desde las 20:00). Mientras
+    los padres cenan tranquilos, los niños juegan vigilados. Paquete
+    "Para Familias" por 8 € que incluye 2 consumiciones de adulto,
+    1 merienda infantil y 1 hora de parque.
+  por_que_kids_friendly_en: >
+    Burger restaurant inside the Centro de Ocio El Duende leisure centre:
+    ball pit FREE with dinner (Thursday, Friday and Saturday from 20:00).
+    While parents enjoy a peaceful meal, kids play under supervision.
+    "Family Package" for €8 includes 2 adult drinks, 1 kids' snack
+    and 1 hour in the ball pit.
+  descripcion_general: "Hamburguesería con parque de bolas integrado en el Centro de Ocio El Duende. Cenas familiares de jueves a sábado a partir de las 20:00, con parque incluido en el precio."
+  descripcion_general_en: "Burger restaurant with integrated ball pit inside the El Duende Leisure Centre. Family dinners Thursday to Saturday from 20:00, with the ball pit included in the price."
+  direccion: "C. Joyería, 13, 11408 Jerez de la Frontera"
+  valoracion_kids: 4.4
+  imagen: "/assets/img/restaurantes/duendeburguer-jerez.jpg"
+  web: "https://www.duendeweb.org"
+  instagram: "elduendeanimacion"
+  ultima_verificacion: "2026-05-24"
+  lat: 36.67846
+  lng: -6.15536
+  tags:
+    tronas: true
+    carta_infantil: true
+    zona_juegos: true
+    cambiador: false
+    terraza: false
+    mascotas: false
+    accesible: true
+    opciones_saludables: false
+  precio: "€€"
+
 # ─────────────────────────────────────────────────────────────
 # EL PUERTO DE SANTA MARÍA
 # ─────────────────────────────────────────────────────────────
