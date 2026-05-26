@@ -29,7 +29,7 @@ conparquedebolas/          ← raíz del repo git
     _includes/
       header.html          ← cabecera con logo tipográfico y selector de idioma
       footer.html          ← pie oscuro con CTA de contacto
-      head.html            ← meta tags + hreflang + Google Fonts
+      head.html            ← meta tags + hreflang + Google Fonts + favicons + geo + preload
     _plugins/
       restaurantes_generator.rb  ← genera todas las páginas dinámicas a partir del YAML
     _sass/
@@ -37,10 +37,14 @@ conparquedebolas/          ← raíz del repo git
     assets/
       main.scss            ← punto de entrada SCSS (tokens → minima → parquedebolas)
       img/restaurantes/    ← imágenes de portada (ratio 16:9, JPG o WebP)
+      favicon/             ← favicon.ico, favicon.svg, favicon-96x96.png, apple-touch-icon.png,
+                              web-app-manifest-192x192.png, web-app-manifest-512x512.png
     design/                ← ficheros JSX de referencia visual (Claude Design, no se sirven)
     index.html             ← home ES
     contacto.html          ← página de contacto ES
     gracias.html           ← página de gracias ES
+    robots.txt             ← permite todo + apunta a /sitemap.xml
+    site.webmanifest       ← PWA manifest con iconos 192/512 y theme_color crema
     en/
       contacto.html        ← página de contacto EN
       gracias.html         ← página de gracias EN
@@ -142,9 +146,17 @@ El diseño es editorial y mediterráneo. Ficheros de referencia en `design/` (JS
 
 `$content-width: 1280px` — sobreescribe el default de Minima (800px) en `assets/main.scss`.
 
+### Estructura de la home (`home.html`)
+
+1. Hero con eyebrow (provincia · nº restaurantes), H1 y descripción
+2. **`ciudades-nav`** — pills por ciudad (nombre + badge con nº de sitios), enlaza a `/ciudades/[slug]/`
+3. Listado de secciones por ciudad, cada una con sus tarjetas
+
+> La nav de ciudades se genera dinámicamente desde el YAML; al añadir una ciudad nueva aparece sola.
+
 ### Estructura de la ficha detalle (`restaurante.html`)
 
-1. Imagen a sangre completa
+1. Imagen a sangre completa (`loading="eager"` para LCP óptimo)
 2. Breadcrumb mono + eyebrow de ciudad
 3. Nombre en serif grande con punto terracota
 4. Fila de meta: rating (ambar) · precio (serif itálica)
@@ -153,6 +165,55 @@ El diseño es editorial y mediterráneo. Ficheros de referencia en `design/` (JS
 7. Card de info: dirección (enlaza a Google Maps), web, instagram — grid horizontal, label mono + valor sans
 8. Mapa Google Maps embebido (inline, no flotante)
 9. Fecha de verificación en mono
+
+---
+
+## SEO y analítica
+
+### Structured data (JSON-LD)
+
+| Página | Schema |
+|---|---|
+| Ficha de restaurante | `Restaurant` (nombre, dirección, geo, imagen, precio, amenityFeature) |
+| Ficha de restaurante | `BreadcrumbList` (Inicio → Ciudad → Restaurante) |
+| Página de ciudad | `ItemList` (lista de restaurantes de esa ciudad) |
+| Página de filtro por tag | `ItemList` (lista de restaurantes con ese tag) |
+
+### Títulos de página
+
+El generador construye títulos enriquecidos para SEO:
+- ES: `"Nombre · Restaurante kids-friendly en Ciudad"`
+- EN: `"Nombre · Kid-friendly restaurant in Ciudad"`
+
+### Meta tags SEO en `head.html`
+
+- `jekyll-seo-tag` — title, description, og:*, canonical
+- `jekyll-sitemap` — genera `/sitemap.xml` automáticamente
+- `robots.txt` — apunta a `/sitemap.xml`
+- hreflang ES/EN en todas las páginas con versión alternativa
+- `og:type: article` en fichas de restaurante
+- `geo.region: ES-CA`, `geo.placename: Cádiz` en todas las páginas
+- `geo.position` + `ICBM` con lat/lng en fichas de restaurante
+- `<link rel="preload" as="image">` para la imagen hero de cada restaurante
+
+### Favicons
+
+Set completo en `assets/favicon/`:
+
+| Fichero | Uso |
+|---|---|
+| `favicon.ico` | Navegadores legacy |
+| `favicon.svg` | Navegadores modernos (escala vectorial) |
+| `favicon-96x96.png` | Chrome, Firefox desktop |
+| `apple-touch-icon.png` | iOS al añadir a pantalla de inicio |
+| `web-app-manifest-192x192.png` | Android / PWA |
+| `web-app-manifest-512x512.png` | Android / PWA splash |
+
+El `site.webmanifest` referencia los dos últimos con `"purpose": "maskable"` y `theme_color: #F5EFE4`.
+
+### Analítica
+
+**Simple Analytics** — script cargado en `_layouts/default.html` antes de `</body>`. Sin cookies, 100% privacy-first. Panel en simpleanalytics.com.
 
 ---
 
@@ -237,6 +298,8 @@ git checkout dev  # volver a dev para seguir trabajando
 | Email `hola@conparquedebolas.com` (Cloudflare routing) | MVP ✅ |
 | Ordenación por `valoracion_kids` | MVP ✅ |
 | Rediseño editorial completo (Fraunces + Inter Tight + sistema de marca) | MVP ✅ |
+| SEO completo (structured data, títulos, favicons, robots.txt, geo meta) | MVP ✅ |
+| Analítica con Simple Analytics (privacy-first) | MVP ✅ |
 | Buscador por nombre | v2 |
 | Alta de restaurantes vía GitHub Issues | v2 |
 | Más ciudades de Cádiz (Cádiz capital, Conil, Vejer, Tarifa, Sanlúcar) | v2 |
