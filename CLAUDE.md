@@ -163,8 +163,25 @@ El diseño es editorial y mediterráneo. Ficheros de referencia en `design/` (JS
 5. Tags clicables que filtran por esa característica en la ciudad
 6. Sección "El sitio." — `por_que_kids_friendly` + `descripcion_general`
 7. Card de info: dirección (enlaza a Google Maps), web, instagram — grid horizontal, label mono + valor sans
-8. Mapa Google Maps embebido (inline, no flotante)
-9. Fecha de verificación en mono
+8. Galería de fotos (si el restaurante tiene `imagenes` en el YAML)
+9. Mapa Google Maps embebido (inline, no flotante)
+10. Fecha de verificación en mono
+
+### Galería de fotos
+
+Se activa añadiendo `imagenes` al restaurante en el YAML:
+
+```yaml
+imagenes:
+  - "/assets/img/restaurantes/slug-1.jpg"
+  - "/assets/img/restaurantes/slug-2.jpg"
+```
+
+Layout responsive con `object-fit: cover` y ratios fijos:
+- **Mobile:** primera foto full-width (16:9) + resto en grid de 2 columnas (1:1)
+- **Desktop:** grid de 3 columnas iguales (4:3) — todas las fotos visibles sin scroll
+- Label "📷 N fotos" encima del grid (mono, uppercase)
+- Click en cualquier foto abre el lightbox con navegación por flechas y teclado
 
 ---
 
