@@ -23,8 +23,8 @@
   imagen: "/assets/img/restaurantes/piamonte-jerez.jpg"
   web: "https://piamontejerez.com"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6960
-  lng: -6.1180
+  lat: 36.676889
+  lng: -6.122423
   tags:
     tronas: true
     carta_infantil: true
@@ -51,8 +51,8 @@
   valoracion_kids: 3.8
   imagen: "/assets/img/restaurantes/el-retiro-jerez.jpg"
   ultima_verificacion: "2026-05-06"
-  lat: 36.7035
-  lng: -6.1170
+  lat: 36.698261
+  lng: -6.109187
   tags:
     tronas: true
     carta_infantil: true
@@ -113,8 +113,8 @@
   valoracion_kids: 3.2
   imagen: "/assets/img/restaurantes/altos-ibericos-jerez.jpg"
   ultima_verificacion: "2026-05-06"
-  lat: 36.7015
-  lng: -6.1145
+  lat: 36.691437
+  lng: -6.109371
   tags:
     tronas: true
     carta_infantil: false
@@ -144,8 +144,8 @@
   imagen: "/assets/img/restaurantes/muerde-la-pasta-jerez.jpg"
   web: "https://muerdelapasta.com/restaurantes-italianos-cerca/centro-comercial-luz-shopping/"
   ultima_verificacion: "2026-05-06"
-  lat: 36.7110
-  lng: -6.1075
+  lat: 36.692486
+  lng: -6.157173
   tags:
     tronas: true
     carta_infantil: true
@@ -176,8 +176,8 @@
   web: "https://www.restaurantehikari.com"
   instagram: "hikari.sushi.jerez"
   ultima_verificacion: "2026-05-06"
-  lat: 36.7035
-  lng: -6.1180
+  lat: 36.697186
+  lng: -6.115036
   tags:
     tronas: true
     carta_infantil: true
@@ -209,8 +209,8 @@
   imagen: "/assets/img/restaurantes/rancho-cortesano.jpg"
   web: "https://ranchocortesano.net"
   ultima_verificacion: "2026-05-07"
-  lat: 36.5950
-  lng: -6.1990
+  lat: 36.659217
+  lng: -6.007579
   tags:
     tronas: true
     carta_infantil: true
@@ -246,8 +246,8 @@
   imagen: "/assets/img/restaurantes/rociero-blanca-paloma.jpg"
   web: "https://www.restauranteblancapaloma.com"
   ultima_verificacion: "2026-05-07"
-  lat: 36.7150
-  lng: -6.1350
+  lat: 36.72278
+  lng: -6.149072
   tags:
     tronas: true
     carta_infantil: false
@@ -278,8 +278,8 @@
   web: "https://restauranteflanagan.com"
   instagram: "flanaganfgb"
   ultima_verificacion: "2026-05-07"
-  lat: 36.6960
-  lng: -6.1350
+  lat: 36.696298
+  lng: -6.133979
   tags:
     tronas: true
     carta_infantil: true
@@ -385,8 +385,8 @@
   imagen: "/assets/img/restaurantes/fosters-vistahermosa.jpg"
   web: "https://fostershollywood.es/restaurantes/cadiz/el-puerto-de-santa-maria/fh-vistahermosa"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6010
-  lng: -6.2780
+  lat: 36.600089
+  lng: -6.251072
   tags:
     tronas: true
     carta_infantil: true
@@ -417,8 +417,8 @@
   web: "https://pizzeriablancapaloma.com"
   instagram: "pizzeriablancapaloma"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6017
-  lng: -6.2440
+  lat: 36.61102
+  lng: -6.237731
   tags:
     tronas: true
     carta_infantil: true
@@ -449,8 +449,8 @@
   web: "https://pizzerialittleitaly.es"
   instagram: "little_italy_restaurante"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6210
-  lng: -6.2210
+  lat: 36.603938
+  lng: -6.232554
   tags:
     tronas: true
     carta_infantil: true
@@ -480,8 +480,8 @@
   imagen: "/assets/img/restaurantes/shamrock.jpg"
   web: "https://www.shamrockbarandeatery.com"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6175
-  lng: -6.3055
+  lat: 36.616604
+  lng: -6.276851
   tags:
     tronas: true
     carta_infantil: true
@@ -510,8 +510,8 @@
   valoracion_kids: 4.4
   imagen: "/assets/img/restaurantes/parrilla-baileys.jpg"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6080
-  lng: -6.2810
+  lat: 36.608422
+  lng: -6.277319
   tags:
     tronas: true
     carta_infantil: true
@@ -541,8 +541,8 @@
   imagen: "/assets/img/restaurantes/the-cabin-beer-garden.jpg"
   instagram: "thecabinbeer"
   ultima_verificacion: "2026-05-06"
-  lat: 36.6010
-  lng: -6.2855
+  lat: 36.606968
+  lng: -6.264931
   tags:
     tronas: true
     carta_infantil: true
@@ -575,8 +575,8 @@
   imagen: "/assets/img/restaurantes/salicornia-torunos.jpg"
   instagram: "salicorniaelpuerto"
   ultima_verificacion: "2026-05-23"
-  lat: 36.5786
-  lng: -6.2150
+  lat: 36.572384
+  lng: -6.216589
   tags:
     tronas: true
     carta_infantil: false
