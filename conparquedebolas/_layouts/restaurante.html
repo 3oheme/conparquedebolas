@@ -10,12 +10,12 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  "name": "{{ page.nombre | escape }}",
-  "description": "{{ page[f_pq] | strip_newlines | escape }}",
+  "name": {{ page.nombre | jsonify }},
+  "description": {{ page[f_pq] | strip_newlines | jsonify }},
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "{{ page.direccion | escape }}",
-    "addressLocality": "{{ page.ciudad | escape }}",
+    "streetAddress": {{ page.direccion | jsonify }},
+    "addressLocality": {{ page.ciudad | jsonify }},
     "addressCountry": "ES"
   }{% if page.lat and page.lng %},
   "geo": {
