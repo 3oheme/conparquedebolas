@@ -37,14 +37,16 @@ module Jekyll
       self.data["lang"] = lang
       self.data["image"] = data["imagen"] if data["imagen"]
       if lang == "en"
-        self.data["title"]         = data["nombre"]
+        self.data["title"]         = "#{data['nombre']} · Kid-friendly restaurant in #{data['ciudad']}"
         self.data["description"]   = data["por_que_kids_friendly_en"]
         self.data["alternate_url"] = "/restaurantes/#{slug}/"
+        self.data["type"]          = "article"
       else
-        self.data["title"]         = data["nombre"]
+        self.data["title"]         = "#{data['nombre']} · Restaurante kids-friendly en #{data['ciudad']}"
         self.data["description"]   = data["por_que_kids_friendly"]
         self.data["has_en"]        = Jekyll.has_en(data)
         self.data["alternate_url"] = "/en/restaurantes/#{slug}/"
+        self.data["type"]          = "article"
       end
     end
   end

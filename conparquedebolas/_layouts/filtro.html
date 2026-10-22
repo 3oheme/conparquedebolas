@@ -7,6 +7,25 @@ layout: default
 {% assign tag_label = t.tags[page.tag_key] %}
 {% assign count = page.restaurantes | size %}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.description | escape }}",
+  "numberOfItems": {{ count }},
+  "itemListElement": [
+    {% for r in page.restaurantes %}{
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": "{{ r.nombre | escape }}",
+      "url": "{{ site.url }}{{ lang_prefix }}/restaurantes/{{ r.slug }}/"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 <div class="listing wrapper">
   <header class="listing-header">
     <p class="listing-header__breadcrumb">
@@ -21,7 +40,7 @@ layout: default
     <article class="card">
       <a href="{{ lang_prefix }}/restaurantes/{{ r.slug }}/" class="card__imagen-link">
         <div class="card__imagen">
-          {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }}" loading="lazy">
+          {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }} · restaurante kids-friendly en {{ r.ciudad }}" loading="lazy">
           {% else %}<div class="card__imagen-placeholder">🍽️</div>{% endif %}
         </div>
       </a>

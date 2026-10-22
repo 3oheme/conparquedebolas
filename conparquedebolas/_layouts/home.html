@@ -20,15 +20,15 @@ layout: default
   </section>
 
   <div class="wrapper">
-    <nav class="filtros-nav">
-      <a href="{{ lang_prefix }}/con/zona-juegos/" class="tag">🎮 {{ t.tags.zona_juegos }}</a>
-      <a href="{{ lang_prefix }}/con/carta-infantil/" class="tag">🧒 {{ t.tags.carta_infantil }}</a>
-      <a href="{{ lang_prefix }}/con/tronas/" class="tag">🪑 {{ t.tags.tronas }}</a>
-      <a href="{{ lang_prefix }}/con/cambiador/" class="tag">🚻 {{ t.tags.cambiador }}</a>
-      <a href="{{ lang_prefix }}/con/terraza/" class="tag">🌿 {{ t.tags.terraza }}</a>
-      <a href="{{ lang_prefix }}/con/mascotas/" class="tag">🐶 {{ t.tags.mascotas }}</a>
-      <a href="{{ lang_prefix }}/con/accesible/" class="tag">♿ {{ t.tags.accesible }}</a>
-      <a href="{{ lang_prefix }}/con/opciones-saludables/" class="tag">🥗 {{ t.tags.opciones_saludables }}</a>
+    <nav class="ciudades-nav">
+      {% assign ciudad_nombres = site.data.cadiz | map: "ciudad" | uniq %}
+      {% for ciudad in ciudad_nombres %}
+        {% assign ciudad_slug = ciudad | slugify: "latin" %}
+        {% assign ciudad_count = site.data.cadiz | where: "ciudad", ciudad | size %}
+        <a href="{{ lang_prefix }}/ciudades/{{ ciudad_slug }}/" class="ciudades-nav__item">
+          {{ ciudad }}<span class="ciudades-nav__count">{{ ciudad_count }}</span>
+        </a>
+      {% endfor %}
     </nav>
 
     {% if page.ciudades %}
@@ -46,7 +46,7 @@ layout: default
           <article class="card">
             <a href="{{ lang_prefix }}/restaurantes/{{ r.slug }}/" class="card__imagen-link">
               <div class="card__imagen">
-                {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }}" loading="lazy">
+                {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }} · restaurante kids-friendly en {{ r.ciudad }}" loading="lazy">
                 {% else %}<div class="card__imagen-placeholder">🍽️</div>{% endif %}
               </div>
             </a>
@@ -91,7 +91,7 @@ layout: default
           <article class="card">
             <a href="/restaurantes/{{ r.slug }}/" class="card__imagen-link">
               <div class="card__imagen">
-                {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }}" loading="lazy">
+                {% if r.imagen %}<img src="{{ r.imagen }}" alt="{{ r.nombre }} · restaurante kids-friendly en {{ r.ciudad }}" loading="lazy">
                 {% else %}<div class="card__imagen-placeholder">🍽️</div>{% endif %}
               </div>
             </a>
