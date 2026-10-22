@@ -11,14 +11,14 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "{{ page.title | escape }}",
-  "description": "{{ page.description | escape }}",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
   "numberOfItems": {{ count }},
   "itemListElement": [
     {% for r in page.restaurantes %}{
       "@type": "ListItem",
       "position": {{ forloop.index }},
-      "name": "{{ r.nombre | escape }}",
+      "name": {{ r.nombre | jsonify }},
       "url": "{{ site.url }}{{ lang_prefix }}/restaurantes/{{ r.slug }}/"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
